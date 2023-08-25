@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
   --primary_red: #c73d31;
   --primary_light: #e1e6eb;
   --primary_dark: #1f1b1a;
-  --lite_red: rgba(255, 192, 184, 0.6);
+  --lite_red: rgba(255, 192, 184);
   --lite_blue: rgba(184, 212, 255);
   --gray_1: #595959;
   --gray_2: #ababab;
@@ -23,4 +23,20 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 170rem;
+}
+
+.i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: var(--primary_red);
 }

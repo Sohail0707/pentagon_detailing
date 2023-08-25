@@ -1,14 +1,18 @@
 header {
   background: var(--primary_light);
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
+  /* height: 100vh; */
+  padding: 20rem 0 15rem 0;
+  /* background-color: darkseagreen; */
 }
 
 .main_nav {
-  width: 100%;
   position: absolute;
   top: 0;
+  width: 100%;
   padding: 0 6.4rem;
   z-index: 1;
 }
@@ -34,7 +38,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.136rem;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--gray_1);
 }
 
@@ -52,69 +56,79 @@ header {
 /* -------------- Section Hero -------------- */
 .section_hero {
   position: relative;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 150rem;
   height: 100%;
-  z-index: 1;
+  margin: 0 auto;
+  z-index: 2;
+  /* background-color: crimson; */
 }
 
 .main_heading {
-  position: absolute;
-  top: 20rem;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   font-size: 12.8rem;
+  font-weight: 500;
   letter-spacing: 1.024rem;
   width: 83rem;
   text-align: center;
-  line-height: 1;
+  line-height: 0.9;
   color: var(--primary_dark);
-  z-index: 1;
 }
 
-.highlight_txt {
+.hero_img {
+  width: 99rem;
+  height: auto;
+}
+
+.section_hero .i {
+  margin: 4.8rem auto 0 auto;
+}
+.icon {
+  width: 2.4rem;
+  stroke-width: 0.3rem;
+}
+
+/* Header background shapes and texts */
+header .highlight_txt {
   display: inline-block;
   position: absolute;
-  top: 27rem;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -70%);
   color: #fff;
   text-transform: uppercase;
   font-size: 25.6rem;
   letter-spacing: 2.176rem;
   text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+  z-index: 1;
 }
 
-.hero_img {
-  position: absolute;
-  top: 47rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 99rem;
-  height: auto;
-}
-
-/* Header background shape */
 .shape_1 {
   display: inline-block;
   position: absolute;
   background: var(--lite_blue);
-  top: -10rem;
-  left: 21rem;
+  top: -15rem;
+  left: 18rem;
   width: 56rem;
   height: 56rem;
   border-radius: 50%;
   filter: blur(20rem);
+  z-index: 0;
 }
 .shape_2 {
   display: inline-block;
   position: absolute;
   background: var(--lite_red);
-  top: 34rem;
+  bottom: 5rem;
   right: -5rem;
   width: 56rem;
   height: 56rem;
   border-radius: 50%;
   filter: blur(20rem);
+  z-index: 0;
 }
