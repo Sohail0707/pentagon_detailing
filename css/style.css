@@ -7,8 +7,14 @@ header {
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  padding: 20rem 0 15rem 0;
   /* height: 100vh; */
+}
+
+.header_container {
+  position: relative;
+  width: 150rem;
+  margin: 0 auto;
+  padding: 20rem 0 15rem 0;
   /* background-color: darkseagreen; */
 }
 
@@ -19,6 +25,7 @@ header .highlight_txt {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
+  line-height: 1;
   color: #fff;
   text-transform: uppercase;
   font-size: 25.6rem;
@@ -31,20 +38,21 @@ header .highlight_txt {
   display: inline-block;
   position: absolute;
   background: var(--lite_blue);
-  top: -15rem;
-  left: 18rem;
+  top: -10rem;
+  left: 9.6rem;
   width: 56rem;
   height: 56rem;
   border-radius: 50%;
   filter: blur(20rem);
   z-index: 0;
 }
+
 .shape_2 {
   display: inline-block;
   position: absolute;
   background: var(--lite_red);
-  bottom: 5rem;
-  right: -5rem;
+  bottom: 10rem;
+  right: -16.8rem;
   width: 56rem;
   height: 56rem;
   border-radius: 50%;
@@ -110,9 +118,9 @@ header .highlight_txt {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  width: 150rem;
+
   height: 100%;
-  margin: 0 auto;
+
   z-index: 2;
   /* background-color: crimson; */
 }
@@ -203,6 +211,7 @@ header .highlight_txt {
   position: relative;
   width: 100%;
   padding: 12rem 0;
+  overflow: hidden;
 }
 
 .about_container {
@@ -211,6 +220,7 @@ header .highlight_txt {
   margin: 0 auto;
 }
 
+/* about heighlight texts and shapes */
 .section_about .highlight_txt {
   display: inline-block;
   position: absolute;
@@ -225,6 +235,43 @@ header .highlight_txt {
   z-index: 1;
 }
 
+.section_about .shape_3 {
+  position: absolute;
+  left: -32rem;
+  bottom: -24rem;
+  width: 79rem;
+  height: 79rem;
+  border-radius: 50%;
+  background: var(--lite_blue);
+  filter: blur(30rem);
+  z-index: 0;
+}
+
+.section_about .shape_4 {
+  position: absolute;
+  right: -19rem;
+  top: -5rem;
+  width: 56rem;
+  height: 56rem;
+  border-radius: 50%;
+  background: var(--lite_blue);
+  filter: blur(20rem);
+  z-index: 0;
+}
+
+.section_about .shape_5 {
+  position: absolute;
+  right: 26rem;
+  top: -9rem;
+  width: 56rem;
+  height: 56rem;
+  border-radius: 50%;
+  background: var(--lite_red);
+  filter: blur(20rem);
+  z-index: 0;
+}
+
+/* main about section */
 .about_box {
   position: relative;
   width: 100%;
@@ -232,6 +279,7 @@ header .highlight_txt {
   grid-template-columns: 1fr 68.5rem;
   grid-template-rows: auto auto;
   column-gap: 8rem;
+  row-gap: 12rem;
   z-index: 2;
 }
 
@@ -307,4 +355,42 @@ header .highlight_txt {
   fill: coral;
   z-index: 3;
   clip-path: url(#shape-clip);
+}
+
+/* about summery container */
+.about_summery_container {
+  grid-column: 1/3;
+  grid-row: 2/2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about_summery_container .box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  text-transform: uppercase;
+}
+
+.about_summery_container .num {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--primary_red);
+}
+
+.about_summery_container .line {
+  width: 0.2rem;
+  height: 5rem;
+  border-radius: 0.3rem;
+  background: var(--gray_2);
+}
+
+.about_summery_container .txt {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--gray_3);
+  line-height: 1.3;
 }
