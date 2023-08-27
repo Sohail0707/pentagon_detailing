@@ -289,7 +289,7 @@ header .highlight_txt {
   grid-column: 1/1;
 }
 
-.section_title {
+.section_about .section_title {
   text-transform: uppercase;
   font-size: 2.4rem;
   letter-spacing: 0.168rem;
@@ -693,30 +693,60 @@ header .highlight_txt {
 /* //////////////////////////////////////////// */
 .section_gallery {
   overflow: hidden;
+  padding: 12rem 0;
 }
 
 .gallery_container {
+  position: relative;
   width: 150rem;
   margin: 0 auto;
-  position: relative;
-  padding: 12rem 0;
   height: calc(50rem + 24rem);
   /* background-color: cornflowerblue; */
+}
+
+.section_gallery .highlight_txt {
+  display: inline-block;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--primary_light);
+  text-transform: uppercase;
+  font-size: 19.6rem;
+  line-height: 1;
+  opacity: 0.4;
+  letter-spacing: 1.666rem;
+  z-index: 2;
+}
+
+.section_gallery .section_title {
+  position: absolute;
+  z-index: 3;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.168rem;
+  font-weight: 400;
+  color: var(--primary_dark);
+  margin-top: 7rem;
+  text-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.2);
 }
 
 .background_highlight {
   display: block;
   width: 100vw;
-  height: 100%;
+  height: calc(100% + 24rem);
   background: linear-gradient(
     to right,
     rgba(199, 85, 49, 0.7),
     rgba(199, 61, 49, 0.75)
   );
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   backdrop-filter: blur(0.5rem);
   z-index: 2;
 }
@@ -726,12 +756,11 @@ header .highlight_txt {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, calc(-50% + 3rem));
   height: 50rem;
   width: 86rem;
   border-radius: 1rem;
   overflow: hidden;
-  z-index: 1;
   transition: all 0.3s;
 }
 
@@ -743,20 +772,24 @@ header .highlight_txt {
 
 /* for the center image */
 .gallery_img.center {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, calc(-50% + 3rem));
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
   z-index: 3;
 }
 
 /* for the left image */
 .gallery_img.left {
-  transform: translate(calc(-50% - 50rem), -50%) scale(0.8);
+  transform: translate(calc(-50% - 50rem), calc(-50% + 3rem)) scale(0.8);
   z-index: 1;
 }
 
 /* for the right image */
 .gallery_img.right {
-  transform: translate(calc(-50% + 50rem), -50%) scale(0.8);
+  transform: translate(calc(-50% + 50rem), calc(-50% + 3rem)) scale(0.8);
+  z-index: 0;
+}
+
+.gallery_container .gallery_img.center + .gallery_img.right {
   z-index: 1;
 }
 
@@ -779,9 +812,9 @@ header .highlight_txt {
 }
 
 .btn_gallery.left {
-  transform: translate(calc(-50% - 50rem), -50%);
+  transform: translate(calc(-50% - 50rem), calc(-50% + 3rem));
 }
 
 .btn_gallery.right {
-  transform: translate(calc(-50% + 50rem), -50%);
+  transform: translate(calc(-50% + 50rem), calc(-50% + 3rem));
 }
