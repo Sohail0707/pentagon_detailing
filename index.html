@@ -169,7 +169,8 @@
                 <img
                   src="assets/service_car.png"
                   alt="a luxury car png"
-                  class="service_img" />
+                  class="service_img"
+                  loading="lazy" />
               </picture>
 
               <!-- This is the inditacors to indicate different sides of the car -->
@@ -252,6 +253,29 @@
           <span class="highlight_txt">services</span>
           <span class="shape_6"></span>
           <span class="shape_7"></span>
+        </div>
+      </section>
+
+      <!-- ------------ Section Gallery ------------------- -->
+      <section class="section_gallery">
+        <div class="gallery_container">
+          <span class="background_highlight"></span>
+          <picture class="gallery_img left">
+            <img src="assets/gallery_img/work_1.jpg" alt="" />
+          </picture>
+          <picture class="gallery_img center">
+            <img src="assets/gallery_img/work_2.jpg" alt="" />
+          </picture>
+          <picture class="gallery_img right">
+            <img src="assets/gallery_img/work_3.jpg" alt="" />
+          </picture>
+          <picture class="gallery_img right">
+            <img src="assets/gallery_img/work_4.jpg" alt="" />
+          </picture>
+          <button class="btn_gallery left" onclick="carousel('left')"></button>
+          <button
+            class="btn_gallery right"
+            onclick="carousel('right')"></button>
         </div>
       </section>
     </main>
