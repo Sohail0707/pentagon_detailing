@@ -88,8 +88,7 @@ header .highlight_txt {
   gap: 3.2rem;
 }
 
-.nav_link:is(:link, :visited),
-.btn_contact {
+.nav_link:is(:link, :visited) {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -100,15 +99,17 @@ header .highlight_txt {
 }
 
 .btn_contact {
-  height: 5rem;
-  width: 18rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.136rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 0.4rem;
-  font-weight: 600;
-  border: 0.3rem solid var(--primary_red);
-  color: var(--primary_red);
+  background: linear-gradient(to right, rgba(199, 85, 49), rgba(199, 61, 49));
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.1);
+  color: var(--primary_light);
 }
 
 /* -------------- Section Hero -------------- */
@@ -320,8 +321,11 @@ header .highlight_txt {
 
 .section_about .btn_contact {
   color: var(--primary_dark);
-  border-color: var(--primary_dark);
+  border: 0.3rem solid var(--primary_dark);
+  font-weight: 600;
+  background: transparent;
   margin-top: 4.8rem;
+  box-shadow: none;
 }
 
 /* about image container */
@@ -495,7 +499,7 @@ header .highlight_txt {
   line-height: 1;
   color: var(--primary_orange);
   opacity: 0.8;
-  text-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.17);
+  /* text-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.17); */
 }
 
 .indicators .lines {
@@ -673,19 +677,14 @@ header .highlight_txt {
 .btn_service:is(:link, :visited) {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.17rem;
   line-height: 1;
-  height: 6.4rem;
-  width: 27.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--primary_red);
+  padding: 1.6rem 3.2rem;
+  border: 0.3rem solid var(--primary_dark);
   border-radius: 0.4rem;
-  color: var(--primary_light);
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  color: var(--primary_dark);
 }
 
 /* //////////////////////////////////////////// */
