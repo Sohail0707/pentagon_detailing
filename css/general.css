@@ -31,8 +31,8 @@ body {
 }
 
 main {
-  width: 170rem;
-  /* width: 100%; */
+  /* width: 170rem; */
+  width: 100%;
 }
 
 .i {
