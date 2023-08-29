@@ -834,7 +834,7 @@ header .highlight_txt {
 
 /* for the left image */
 .gallery_img.left {
-  transform: translate(calc(-50% - 50rem), calc(-50% + 3rem)) scale(0.8);
+  transform: translate(calc(-50% - 60rem), calc(-50% + 3rem)) scale(0.8);
   z-index: 0;
 }
 .gallery_img.left::after {
@@ -843,7 +843,7 @@ header .highlight_txt {
 
 /* for the right image */
 .gallery_img.right {
-  transform: translate(calc(-50% + 50rem), calc(-50% + 3rem)) scale(0.8);
+  transform: translate(calc(-50% + 60rem), calc(-50% + 3rem)) scale(0.8);
   z-index: -1;
 }
 .gallery_img.right::after {
@@ -931,15 +931,16 @@ header .highlight_txt {
 
 .testimonial_container {
   width: 150rem;
-  padding-top: 12rem;
+  padding-top: 10rem;
   position: relative;
   margin: 0 auto;
+  /* background-color: lightseagreen; */
 }
 
 .testimonial_container .highlight_txt {
   display: inline-block;
   position: absolute;
-  top: -1.5rem;
+  top: -3rem;
   left: 50%;
   transform: translate(-50%, 0);
   color: #fff;
@@ -967,29 +968,35 @@ header .highlight_txt {
 }
 
 .testimonial_box {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  z-index: 3;
   width: 100%;
-  display: flex;
   overflow-x: scroll;
-  padding: 0 3rem 3rem;
-  /* flex-direction: row; */
+  /* overflow-x: hidden; */
+  padding: 3.6rem;
+  display: flex;
   align-items: center;
-  /* background-color: blue; */
-  gap: 3rem;
+  gap: 6rem;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  /* background-color: indianred; */
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .testimonial_box::-webkit-scrollbar {
   display: none;
 }
 
 .review_box {
-  padding: 4rem 3.6rem 3.6rem;
+  padding: 6rem 3.6rem 3.6rem;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.07);
+  /* backdrop-filter: blur(0.3rem); */
   border-radius: 1rem;
   position: relative;
-  min-width: 60rem;
+  min-width: calc(50% - 3rem);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -997,14 +1004,40 @@ header .highlight_txt {
 
 .client_name {
   text-transform: capitalize;
-  font-size: 3.2rem;
-  color: var(--primary_dark);
+  font-size: 2.4rem;
+  color: var(--gray_1);
   line-height: 1;
   text-align: end;
 }
 
 .client_review {
   font-size: 2rem;
-  color: var(--gray_3);
+  color: var(--gray_2);
+  font-weight: 300;
   line-height: 1.5;
+}
+
+.review_highlight {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 12.8rem;
+  line-height: 0.4;
+  color: var(--primary_orange);
+  position: absolute;
+  left: 3rem;
+  top: -1rem;
+}
+
+.testimonial_indicator_container {
+  display: flex;
+  width: fit-content;
+  gap: 2.4rem;
+  margin: 2rem auto 0;
+}
+
+.testimonial_indicator_container .ind_dots {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background: var(--primary_orange);
 }

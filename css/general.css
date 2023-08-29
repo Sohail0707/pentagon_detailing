@@ -33,6 +33,7 @@ body {
 main {
   /* width: 170rem; */
   width: 100%;
+  overflow-x: hidden;
 }
 
 .i {
