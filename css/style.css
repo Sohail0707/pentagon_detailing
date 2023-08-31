@@ -999,15 +999,8 @@ header .highlight_txt {
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
 }
-
-/* .review_box.right {
-  opacity: 0;
-}
-.review_box.left {
-  opacity: 0;
-} */
 
 .client_name {
   text-transform: uppercase;
