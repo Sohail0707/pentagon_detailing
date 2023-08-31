@@ -17,6 +17,8 @@ const testimonialContainer__1 = document.querySelector(
 const testimonialContainer__2 = document.querySelector(
   ".testimonial_container___2"
 );
+const review_box = testimonialContainer__2.querySelectorAll(".review_box");
+
 // -------------------------------------------------------
 
 // =======================================================
@@ -34,18 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
   gallery_indicators = document.querySelectorAll(".gallery_indicator");
 });
 
-// editing testimonial container height
-document.addEventListener("DOMContentLoaded", () => {
-  const height = testimonialContainer__2.clientHeight;
-  console.log(height);
-  testimonialContainer__1.style.height = `${height}px`;
-});
-
 // ====================== STYLE END ======================
 // =======================================================
 
 // =======================================================
 // ================ EVENTS OR ANIMATIONS =================
+
 // function to make the gallery carousel working
 const carousel = (direction) => {
   let current;
@@ -80,3 +76,53 @@ const carousel = (direction) => {
     }
   }
 };
+
+// ---------------scroll the review container---------------
+let directionConstant = 1; // if 1 then scroll left, if -1 then scroll right
+let currentIndex = 0;
+let isHovered = false;
+
+function scrollReview(direction) {
+  if (isHovered) return; // If hovered, don't scroll
+
+  const container = testimonialContainer__2;
+
+  if (direction === "left") {
+    currentIndex++;
+    if (currentIndex >= review_box.length) {
+      currentIndex = 0;
+    }
+  } else if (direction === "right") {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = review_box.length - 1;
+    }
+  }
+
+  container.scrollTo({
+    left: currentIndex * container.clientWidth,
+    behavior: "smooth",
+  });
+}
+
+testimonialContainer__2.addEventListener("mouseenter", () => {
+  isHovered = true;
+});
+
+testimonialContainer__2.addEventListener("mouseleave", () => {
+  isHovered = false;
+});
+
+setInterval(() => {
+  if (directionConstant === 1) {
+    scrollReview("left");
+    if (currentIndex === review_box.length - 1) {
+      directionConstant = -1;
+    }
+  } else if (directionConstant === -1) {
+    scrollReview("right");
+    if (currentIndex === 0) {
+      directionConstant = 1;
+    }
+  }
+}, 5000);
