@@ -1,0 +1,288 @@
+.section_service {
+  position: relative;
+  width: 100%;
+  padding: 12rem 0;
+  overflow: hidden;
+  background: var(--primary_light);
+}
+
+.service_container {
+  position: relative;
+  width: 150rem;
+  margin: 0 auto;
+  /* background-color: dodgerblue; */
+  /* padding: 12rem 0; */
+}
+
+.service_container__1_1 {
+  width: 100%;
+}
+
+.highlight_txt {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 19.6rem;
+  line-height: 1;
+  letter-spacing: 1.666rem;
+  margin: 0 auto;
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.service_container__1_2 {
+  padding-top: 10rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 42.5rem 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "service_message full_card premium_card signature_card"
+    "interior_heading interior_heading interior_heading interior_heading"
+    "interior_con interior_con interior_con interior_con"
+    "exterior_heading exterior_heading exterior_heading exterior_heading"
+    "exterior_con exterior_con exterior_con exterior_con";
+}
+
+/* backgrounds */
+.category_background {
+  position: absolute;
+  grid-column: 1/1;
+  grid-row: 1/6;
+  background: rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.full_background {
+  position: absolute;
+  grid-column: 2/2;
+  grid-row: 1/6;
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.premium_background {
+  position: absolute;
+  grid-column: 3/3;
+  grid-row: 1/6;
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+  z-index: 3;
+}
+
+.signature_background {
+  position: absolute;
+  grid-column: 4/4;
+  grid-row: 1/6;
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* service box style */
+.service_message_box {
+  grid-area: service_message;
+  height: 100%;
+  width: 100%;
+  padding: 4.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.service_message {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 4.8rem;
+  font-weight: 400;
+  letter-spacing: 0.408rem;
+  color: var(--primary_orange);
+  opacity: 0.5;
+}
+
+.full_detail_container {
+  grid-area: full_card;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.signature_detail_container {
+  grid-area: signature_card;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.serviceCard {
+  padding: 4.8rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_heading {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  line-height: 1;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.306rem;
+  color: var(--primary_dark);
+}
+
+.pricing_container {
+  margin: 8rem 0 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.pricing {
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 500;
+  display: inline-block;
+  color: var(--primary_dark);
+  opacity: 0.7;
+}
+
+.pricing span {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 400;
+  display: inline-block;
+  letter-spacing: 0.204rem;
+  color: var(--primary_dark);
+  opacity: 0.5;
+}
+
+.description {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.136rem;
+  text-align: center;
+  color: var(--primary_dark);
+  opacity: 0.4;
+  margin-bottom: auto;
+}
+
+.btn_schedule:is(:link, :visited) {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.136rem;
+  padding: 2rem 3.2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 0.15rem solid var(--primary_dark);
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.05);
+  color: var(--primary_dark);
+  margin-top: 4.8rem;
+}
+
+.btn_schedule.premium:is(:link, :visited) {
+  border: none;
+  color: var(--primary_red);
+}
+
+.premium {
+  color: var(--primary_light);
+}
+.premium span {
+  color: var(--primary_light);
+}
+.premium_detail_container {
+  grid-area: premium_card;
+  background: linear-gradient(
+    to bottom,
+    rgba(199, 61, 49, 0.74),
+    rgba(199, 85, 49, 0.6)
+  );
+  position: relative;
+  z-index: 4;
+}
+
+/* ---------------------------------------------------- */
+/* ------------------INTERIOR SECTION------------------ */
+/* ---------------------------------------------------- */
+.interior_heading_container {
+  grid-area: interior_heading;
+  height: 100%;
+  width: 100%;
+  padding: 2.4rem 4.8rem;
+  background: var(--primary_light);
+  position: relative;
+  z-index: 3;
+}
+
+.interior_heading {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  letter-spacing: 0.272rem;
+  font-weight: 600;
+}
+
+.interior_container {
+  grid-area: interior_con;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+}
+
+.rows {
+  display: flex;
+  padding: 2.4rem 0;
+}
+
+.column_1 {
+  padding-left: 4.8rem;
+  min-width: 42.5rem;
+  color: var(--primary_dark);
+  opacity: 0.7;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.column_2_3_4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  color: var(--primary_dark);
+  opacity: 0.8;
+}
+
+.column_2_3_4.premium {
+  color: var(--primary_orange);
+}
+
+.column_2_3_4 .icon {
+  width: 2.4rem;
+}

@@ -153,6 +153,7 @@ header .highlight_txt {
 .section_hero .icon {
   width: 3rem;
   stroke-width: 0.2rem;
+  color: var(--primary_orange);
 }
 
 /* //////////////////////////////////////////// */
