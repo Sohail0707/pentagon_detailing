@@ -39,9 +39,9 @@
   grid-template-rows: repeat(5, auto);
   grid-template-areas:
     "service_message full_card premium_card signature_card"
-    "interior_heading interior_heading interior_heading interior_heading"
+    "interior_heading full_blank_1 premium_blank_1 signature_blank_1"
     "interior_con interior_con interior_con interior_con"
-    "exterior_heading exterior_heading exterior_heading exterior_heading"
+    "exterior_heading full_blank_2 premium_blank_2 signature_blank_2"
     "exterior_con exterior_con exterior_con exterior_con";
 }
 
@@ -85,6 +85,36 @@
   height: 100%;
   width: 100%;
   z-index: 0;
+}
+
+.blank {
+  display: block;
+  background: var(--primary_light);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.full_blank_1 {
+  grid-area: full_blank_1;
+}
+.premium_blank_1 {
+  grid-area: premium_blank_1;
+}
+.signature_blank_1 {
+  grid-area: signature_blank_1;
+}
+.full_blank_2 {
+  grid-area: full_blank_2;
+}
+.premium_blank_2 {
+  grid-area: premium_blank_2;
+}
+.signature_blank_2 {
+  grid-area: signature_blank_2;
+}
+
+.premium_blank {
+  z-index: 3;
 }
 
 /* service box style */
@@ -216,6 +246,19 @@
   position: relative;
   z-index: 4;
 }
+.premium_detail_container:after {
+  content: "best choice";
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+  color: var(--primary_orange);
+  opacity: 0.8;
+  position: absolute;
+  left: 50%;
+  top: -3rem;
+  transform: translateX(-50%);
+}
 
 /* ---------------------------------------------------- */
 /* ------------------INTERIOR SECTION------------------ */
@@ -230,7 +273,8 @@
   z-index: 3;
 }
 
-.interior_heading {
+.interior_heading,
+.exterior_heading {
   text-transform: uppercase;
   font-size: 3.2rem;
   letter-spacing: 0.272rem;
@@ -241,6 +285,7 @@
   grid-area: interior_con;
   width: 100%;
   height: 100%;
+  padding: 2.4rem 0;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -269,6 +314,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 0 3.2rem;
   text-align: center;
   font-size: 2rem;
   font-style: normal;
@@ -285,4 +331,26 @@
 
 .column_2_3_4 .icon {
   width: 2.4rem;
+}
+
+/* exterior */
+.exterior_heading_container {
+  grid-area: exterior_heading;
+  height: 100%;
+  width: 100%;
+  padding: 2.4rem 4.8rem;
+  background: var(--primary_light);
+  position: relative;
+  z-index: 3;
+}
+
+.exterior_container {
+  grid-area: exterior_con;
+  width: 100%;
+  height: 100%;
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
 }
