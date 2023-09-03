@@ -306,10 +306,8 @@ header .highlight_txt {
   position: absolute;
   left: 0;
   top: 3.6rem;
-  transform: rotate(8deg) scale(0.94) translateX(0.5rem);
-  fill: coral;
+  transform: rotate(9deg) scale(0.96) translateX(0.5rem);
   z-index: 3;
-  clip-path: url(#shape-clip);
 }
 
 /* about summery container */
