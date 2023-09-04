@@ -1,14 +1,14 @@
 .section_service {
   position: relative;
   width: 100%;
-  padding: 12rem 0;
+  padding: 12rem 8rem;
   overflow: hidden;
   background: var(--primary_light);
 }
 
 .service_container {
   position: relative;
-  width: 150rem;
+  max-width: 150rem;
   margin: 0 auto;
   /* background-color: dodgerblue; */
   /* padding: 12rem 0; */

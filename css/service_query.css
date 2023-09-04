@@ -1,0 +1,25 @@
+@media (min-width: 125em) {
+  html {
+    font-size: 68.75%;
+  }
+}
+
+@media (min-width: 143em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 106em) {
+  html {
+    font-size: 50%;
+  }
+
+  .service_container__1_2 {
+    grid-template-columns: minmax(32rem, 1fr) 1fr 1fr 1fr;
+  }
+
+  .category_row {
+    padding-right: 2.4rem;
+  }
+}
