@@ -12,7 +12,7 @@ header {
 
 .header_container {
   position: relative;
-  width: 150rem;
+  max-width: 150rem;
   margin: 0 auto;
   padding: 20rem 0 15rem 0;
   /* background-color: darkseagreen; */
@@ -71,6 +71,7 @@ header .highlight_txt {
   gap: 2rem;
 
   height: 100%;
+  padding: 0 8rem;
 
   z-index: 2;
   /* background-color: crimson; */
@@ -162,13 +163,13 @@ header .highlight_txt {
 .section_about {
   position: relative;
   width: 100%;
-  padding: 12rem 0;
+  padding: 12rem 8rem;
   overflow: hidden;
 }
 
 .about_container {
   position: relative;
-  width: 150rem;
+  max-width: 150rem;
   margin: 0 auto;
 }
 
@@ -354,13 +355,13 @@ header .highlight_txt {
 .section_service {
   position: relative;
   background: var(--primary_light);
-  padding: 12.8rem 0;
+  padding: 12.8rem 8rem;
   overflow: hidden;
 }
 
 .service_container {
   position: relative;
-  width: 150rem;
+  max-width: 150rem;
   margin: 0 auto;
 }
 
@@ -463,35 +464,35 @@ header .highlight_txt {
 /* positioning indicators */
 .indicator__1 {
   top: 0;
-  left: 48rem;
+  left: 16rem;
 }
 .indicator__2 {
-  top: 6rem;
-  left: 14.8rem;
+  top: 5.4rem;
+  left: -17rem;
 }
 .indicator__3 {
-  top: 18rem;
-  left: 5rem;
+  top: 17rem;
+  left: -26rem;
 }
 .indicator__4 {
   bottom: 7.9rem;
-  left: 12.6rem;
+  left: -19.2rem;
 }
 .indicator__5 {
   bottom: 0;
-  right: 44rem;
+  right: 11.7rem;
 }
 .indicator__6 {
-  bottom: 6rem;
-  right: 12.3rem;
+  bottom: 5.7rem;
+  right: -20.5rem;
 }
 .indicator__7 {
-  top: 20rem;
-  right: 5rem;
+  top: 19.2rem;
+  right: -27.8rem;
 }
 .indicator__8 {
-  top: 4rem;
-  right: 12rem;
+  top: 3rem;
+  right: -20.6rem;
 }
 
 /* positioning indicator line__1 */
@@ -645,7 +646,12 @@ header .highlight_txt {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 15rem 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+  /* padding: 15rem 25rem; */
   z-index: 2;
 }
 
@@ -676,12 +682,12 @@ header .highlight_txt {
 /* //////////////////////////////////////////// */
 .section_gallery {
   overflow: hidden;
-  padding: 10rem 0 12rem 0;
+  padding: 10rem 8rem 12rem 8rem;
 }
 
 .gallery_container {
   position: relative;
-  width: 150rem;
+  max-width: 150rem;
   margin: 0 auto;
   height: calc(50rem + 18rem);
   /* background-color: cornflowerblue; */
@@ -873,12 +879,12 @@ header .highlight_txt {
 /* ----------- Section testimonial ----------- */
 /* //////////////////////////////////////////// */
 .section_testimonial {
-  padding: 12rem 0;
+  padding: 12rem 8rem;
   background: var(--primary_light);
 }
 
 .testimonial_container {
-  width: 150rem;
+  max-width: 150rem;
   padding-top: 15rem;
   position: relative;
   margin: 0 auto;

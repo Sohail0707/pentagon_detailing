@@ -1,4 +1,16 @@
-@media (max-width: 1692px) {
+@media (min-width: 125em) {
+  html {
+    font-size: 68.75%;
+  }
+}
+
+@media (min-width: 143em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 106em) {
   html {
     font-size: 50%;
   }

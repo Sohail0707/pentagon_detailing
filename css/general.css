@@ -54,7 +54,7 @@ main {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 0 6.4rem;
+  padding: 0 8rem;
   z-index: 1;
 }
 
@@ -72,13 +72,15 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  width: max-content;
   list-style: none;
   gap: 3.2rem;
 }
 
 .nav_link:is(:link, :visited) {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
+  line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.136rem;
   font-size: 1.6rem;
@@ -106,11 +108,11 @@ main {
 
 .footer {
   background: var(--primary_dark);
-  padding: 8rem 0;
+  padding: 8rem 8rem;
 }
 
 .footer_container {
-  width: 150rem;
+  max-width: 150rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, auto);
