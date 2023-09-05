@@ -1,17 +1,115 @@
-@media (min-width: 125em) {
-  html {
-    font-size: 68.75%;
-  }
-}
-
 @media (min-width: 143em) {
   html {
     font-size: 75%;
   }
 }
 
+@media (min-width: 125em) {
+  html {
+    font-size: 68.75%;
+  }
+}
+
 @media (max-width: 106em) {
   html {
     font-size: 50%;
+  }
+}
+
+@media (max-width: 75em) {
+  /* setting the general padding left right */
+  .main_nav {
+    padding: 0 4.8rem;
+  }
+
+  .section_hero {
+    padding: 0 4.8rem;
+  }
+
+  .section_about {
+    padding: 12rem 4.8rem;
+  }
+
+  .section_service {
+    padding: 12.8rem 4.8rem;
+  }
+
+  .section_gallery {
+    padding: 10rem 4.8rem 12rem 4.8rem;
+  }
+
+  .section_testimonial {
+    padding: 12rem 4.8rem;
+  }
+
+  .footer {
+    padding: 8rem 4.8rem;
+  }
+  /* ---------------------------------------- */
+
+  /* --------service text positioning-------- */
+  .service_img {
+    width: 75rem;
+  }
+
+  .indicator__1 {
+    left: 11.2rem;
+  }
+
+  .indicator__2 {
+    top: 6.4rem;
+    left: -12.2rem;
+  }
+
+  .indicator__3 {
+    left: -21.2rem;
+  }
+
+  .indicator__4 {
+    left: -14.4rem;
+  }
+
+  .indicator__5 {
+    right: 6.9rem;
+  }
+
+  .indicator__6 {
+    right: -16rem;
+  }
+
+  .indicator__7 {
+    right: -22rem;
+  }
+
+  .indicator__8 {
+    right: -17rem;
+  }
+
+  /* Indicator line 2 */
+  .indicator__1 .line__2 {
+    width: 13rem;
+    transform: translateX(100%) rotate(50deg);
+  }
+
+  .indicator__2 .line__2 {
+    width: 13rem;
+  }
+
+  .indicator__3 .line__2 {
+    width: 16rem;
+  }
+
+  .indicator__4 .line__2 {
+    width: 12rem;
+    transform: translateX(100%) rotate(-40deg);
+  }
+
+  .indicator__5 .line__2 {
+    width: 23rem;
+  }
+
+  .indicator__7 .line__2 {
+    width: 8rem;
+    transform: translateX(-100%) rotate(-40deg);
   }
 }

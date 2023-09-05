@@ -229,7 +229,7 @@ header .highlight_txt {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 68.5rem;
+  grid-template-columns: minmax(48rem, 1fr) minmax(33rem, 68.5rem);
   grid-template-rows: auto auto;
   column-gap: 8rem;
   row-gap: 12rem;

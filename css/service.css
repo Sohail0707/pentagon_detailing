@@ -250,6 +250,10 @@
 /* ---------------------------------------------------- */
 /* ------------------INTERIOR EXTERIOR----------------- */
 /* ---------------------------------------------------- */
+.detail_row_category {
+  display: none;
+}
+
 .interior_heading_container,
 .exterior_heading_container {
   height: 8rem;
