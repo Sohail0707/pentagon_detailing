@@ -1,0 +1,251 @@
+.section_contact {
+  position: relative;
+  padding: 12rem 8rem;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+
+.section_contact .highlight_txt {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  text-align: center;
+  color: var(--primary_light);
+  text-transform: uppercase;
+  font-size: 19.6rem;
+  line-height: 1;
+  letter-spacing: 1.666rem;
+  margin: 0 auto;
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+.section_contact .section_title {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.168rem;
+  font-weight: 400;
+  color: var(--primary_red);
+  margin-top: 7rem;
+  text-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.2);
+}
+
+.contact_container {
+  position: relative;
+  max-width: 150rem;
+  padding-top: 12.8rem;
+  margin: 0 auto;
+  /* background-color: darkviolet; */
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 8rem;
+}
+
+/* decoration shapes */
+.shape_8 {
+  position: absolute;
+  z-index: 0;
+  height: 70rem;
+  width: 70rem;
+  border-radius: 50%;
+  background: var(--lite_red);
+  left: -26rem;
+  top: -7rem;
+  filter: blur(30rem);
+}
+
+.shape_9 {
+  position: absolute;
+  z-index: 0;
+  height: 66rem;
+  width: 66rem;
+  border-radius: 50%;
+  background: var(--lite_red);
+  right: -21rem;
+  top: -1.5rem;
+  filter: blur(30rem);
+}
+
+.shape_10 {
+  position: absolute;
+  z-index: 0;
+  height: 66rem;
+  width: 66rem;
+  border-radius: 50%;
+  background: var(--lite_blue);
+  right: 29rem;
+  bottom: -18.5rem;
+  filter: blur(30rem);
+}
+
+.contact_form_container {
+  position: relative;
+  z-index: 3;
+  grid-column: 1/1;
+  padding: 4.8rem;
+  gap: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(225, 230, 235, 0.4);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.contact_heading {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 6.4rem;
+  letter-spacing: 0.32rem;
+  font-weight: 400;
+  color: var(--primary_dark);
+  line-height: 1;
+  /* margin-top: 2rem; */
+}
+
+.contact_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  border-radius: 1rem;
+  /* background-color: cornsilk; */
+}
+
+.input_container {
+  width: 100%;
+  position: relative;
+}
+
+.contact_form input {
+  width: 100%;
+  /* height: 6rem; */
+  font-size: 2rem;
+  color: var(--primary_dark);
+  font-weight: 400;
+  outline: 0.2rem solid var(--gray_2);
+  border: none;
+  border-radius: 0.6rem;
+  padding: 2rem;
+  background: transparent;
+}
+
+.contact_form textarea {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: var(--primary_dark);
+  font-weight: 400;
+  height: 20rem;
+  resize: none;
+  outline: 0.2rem solid var(--gray_2);
+  border: none;
+  border-radius: 0.6rem;
+  padding: 2rem;
+  line-height: 1.5rem;
+  background: transparent;
+}
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+/* editing labels */
+.contact_form label {
+  font-size: 1.6rem;
+  color: var(--primary_dark);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  left: 2rem;
+  line-height: 1;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.contact_form input + label {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact_form textarea + label {
+  top: 2rem;
+}
+
+/* editing the focus state */
+.contact_form input:focus,
+.contact_form textarea:focus {
+  outline: 0.5rem solid var(--lite_red);
+}
+
+.contact_form input:focus::placeholder,
+.contact_form textarea:focus::placeholder {
+  opacity: 0.5;
+}
+
+.contact_form input:focus + label,
+.contact_form textarea:focus + label {
+  top: -3.5rem;
+  left: 0;
+  transform: translateY(0);
+}
+
+/* editing submit button */
+#contact_submit_btn {
+  cursor: pointer;
+  border: none;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary_light);
+  background: var(--primary_red);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------- */
+/* location container */
+.contact_location_container {
+  position: relative;
+  z-index: 3;
+  grid-column: 2/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: dodgerblue; */
+}
+
+.global_map_container {
+  height: 64rem;
+  position: relative;
+}
+
+.global_map {
+  height: 100%;
+}
+
+.usa_map_container {
+  width: 100%;
+  position: absolute;
+}
+
+.usa_map {
+  width: 100%;
+  /* filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.3)); */
+}
