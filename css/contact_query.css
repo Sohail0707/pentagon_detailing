@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 75em) {
+  .main_nav {
+    padding: 0 6.4rem;
+  }
   .section_contact {
     padding: 12rem 6.4rem;
   }
