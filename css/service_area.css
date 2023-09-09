@@ -12,7 +12,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 4rem;
   /* background-color: dodgerblue; */
 }
 
@@ -77,6 +77,9 @@
   position: relative;
   width: 100%;
   /* background-color: darkseagreen; */
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 
 .service_img_container {
@@ -103,14 +106,143 @@
 .service_img_container .i {
   position: absolute;
   z-index: 3;
+  transform-origin: bottom;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: var(--primary_dark);
+}
+
+.service_img_container .i::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 30%;
+  width: 50%;
+  background: var(--primary_dark);
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  filter: blur(0.3rem);
+  opacity: 0.4;
 }
 
 .service_img_container .icon {
   width: 2.4rem;
   height: 2.4rem;
-  color: var(--primary_dark);
+  position: relative;
 }
 
+.service_img_container .i::after {
+  content: "";
+  display: inline-block;
+  width: max-content;
+  position: absolute;
+  top: -0.2rem;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: var(--primary_dark);
+  text-shadow: -0.1rem -0.1rem 0.2rem white, 0.1rem -0.1rem 0.2rem white,
+    -0.1rem 0.1rem 0.2rem white, 0.1rem 0.1rem 0.2rem white;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  text-transform: capitalize;
+  font-style: normal;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.service_img_container .i:hover {
+  transform: scale(1.35);
+  color: var(--primary_red);
+  z-index: 4;
+}
+
+.service_img_container .i:hover::after {
+  opacity: 1;
+}
+
+/* =========adding content to map pins========= */
+.service_img_container .alexandria::after {
+  content: "alexandria, va";
+}
+.service_img_container .vienna::after {
+  content: "vienna, va";
+}
+.service_img_container .laurel::after {
+  content: "laurel, md";
+}
+.service_img_container .mclean::after {
+  content: "mclean, va";
+}
+.service_img_container .arlington::after {
+  content: "arlington, va";
+}
+.service_img_container .rockville::after {
+  content: "rockville, va";
+}
+.service_img_container .fort_belvoir::after {
+  content: "fort belvoir, va";
+}
+.service_img_container .burke::after {
+  content: "burke, va";
+}
+.service_img_container .annandale::after {
+  content: "annandale, va";
+}
+.service_img_container .leesburg::after {
+  content: "leesburg, va";
+}
+.service_img_container .catonsville::after {
+  content: "catonsville, md";
+}
+.service_img_container .chantilly::after {
+  content: "chantilly, va";
+}
+.service_img_container .adlie::after {
+  content: "adlie, va";
+}
+.service_img_container .reston::after {
+  content: "reston, va";
+}
+.service_img_container .gainesville::after {
+  content: "gainesville, va";
+}
+.service_img_container .springfield::after {
+  content: "springfield, va";
+}
+.service_img_container .annapolis::after {
+  content: "annapolis, md";
+}
+.service_img_container .sterling::after {
+  content: "sterling, va";
+}
+.service_img_container .lorton::after {
+  content: "lorton, va";
+}
+.service_img_container .bethesda::after {
+  content: "bethesda, va";
+}
+.service_img_container .glen_burnie::after {
+  content: "glen burnie, md";
+}
+.service_img_container .clinton::after {
+  content: "clinton, md";
+}
+.service_img_container .silver_spring::after {
+  content: "silver spring, va";
+}
+.service_img_container .clifton::after {
+  content: "clifton, va";
+}
+.service_img_container .falls_church::after {
+  content: "falls church, va";
+}
+
+/* =============positioning map pins============ */
 .alexandria {
   top: 32rem;
   left: 84rem;
@@ -220,9 +352,9 @@
   font-size: 4.8rem;
   text-transform: uppercase;
   letter-spacing: 3rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .map_name_1 {
@@ -232,4 +364,21 @@
 .map_name_2 {
   right: 11rem;
   top: 20rem;
+}
+
+/* =============location name section============= */
+.location_name_container {
+  position: relative;
+  z-index: 2;
+}
+
+.location_name_container_heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 6.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--primary_dark);
+  letter-spacing: 0.32rem;
+  text-align: center;
 }
