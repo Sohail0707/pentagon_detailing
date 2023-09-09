@@ -16,16 +16,30 @@
           <div>
             <h1 class="logo">PENTAGON</h1>
             <ul class="nav_list">
-              <li><a href="#" class="nav_link">home</a></li>
+              <li><a href="index.html" class="nav_link">home</a></li>
               <li><a href="service.html" class="nav_link">services</a></li>
-              <li><a href="#" class="nav_link">service area</a></li>
-              <li><a href="#" class="nav_link">gift certificates</a></li>
-              <li><a href="#" class="nav_link">gallery</a></li>
-              <li><a href="#" class="nav_link">testimonials</a></li>
+              <li>
+                <a href="service_area.html" class="nav_link">service area</a>
+              </li>
+              <li>
+                <a href="gift_certificate.html" class="nav_link"
+                  >gift certificates</a
+                >
+              </li>
+              <li><a href="index.html#gallery" class="nav_link">gallery</a></li>
+              <li>
+                <a href="index.html#testimonial" class="nav_link"
+                  >testimonials</a
+                >
+              </li>
+              <li><a href="index.html#contact" class="nav_link">contact</a></li>
             </ul>
-            <a href="contact.html" class="btn_contact">contact us</a>
+            <a href="set_appointment.html" class="btn_contact"
+              >set appointment</a
+            >
           </div>
         </nav>
+
         <div class="header_container">
           <!---------------- Section Hero ---------------->
           <section class="section_hero">
@@ -58,7 +72,7 @@
       </header>
 
       <!---------------- Section About ---------------->
-      <section class="section_about">
+      <section class="section_about" id="about">
         <div class="about_container">
           <div class="about_container__1">
             <div class="about_txt_container">
@@ -74,7 +88,7 @@
                 art of automotive detailing where each vehicle's story is
                 uniquely enhanced.
               </p>
-              <a href="contact.html" class="btn_contact">contact us</a>
+              <a href="index.html#contact" class="btn_contact">contact us</a>
             </div>
 
             <div class="about_img_container">
@@ -272,7 +286,7 @@
       </section>
 
       <!-- ------------ Section Gallery ------------------- -->
-      <section class="section_gallery">
+      <section class="section_gallery" id="gallery">
         <div class="gallery_container">
           <span class="background_highlight"></span>
 
@@ -304,7 +318,7 @@
       </section>
 
       <!---------------- Section testimonial ---------------->
-      <section class="section_testimonial">
+      <section class="section_testimonial" id="testimonial">
         <div class="testimonial_container">
           <div class="testimonial_container__1">
             <div class="testimonial_container___2">
@@ -357,6 +371,65 @@
         </div>
       </section>
 
+      <!-- -------------Section Contact------------- -->
+      <section class="section_contact" id="contact">
+        <div class="contact_container">
+          <div class="contact_form_container">
+            <h2 class="contact_heading">send us a message</h2>
+            <form action="" class="contact_form">
+              <div class="input_container">
+                <input
+                  type="text"
+                  name="user_name"
+                  id="user_name"
+                  placeholder="John Smith" />
+                <label for="username">full Name</label>
+              </div>
+
+              <div class="input_container">
+                <input
+                  type="email"
+                  name="user_email"
+                  id="user_email"
+                  placeholder="examples@xyz.com" />
+                <label for="user_email">Email address</label>
+              </div>
+
+              <div class="input_container">
+                <textarea
+                  name="user_message"
+                  id="user_message"
+                  placeholder="explain what you want from us..."></textarea>
+                <label for="user_message">Your Message</label>
+              </div>
+
+              <button type="submit" id="contact_submit_btn">
+                send message
+              </button>
+            </form>
+          </div>
+
+          <div class="contact_location_container">
+            <picture class="global_map_container">
+              <img
+                src="assets/global map.svg"
+                alt="map of earth"
+                class="global_map" />
+            </picture>
+
+            <picture class="usa_map_container">
+              <img src="assets/usa map.svg" alt="map of usa" class="usa_map" />
+            </picture>
+          </div>
+
+          <span class="highlight_txt">contact</span>
+          <h3 class="section_title">contact us</h3>
+          <span class="shape_8"></span>
+          <span class="shape_9"></span>
+          <span class="shape_10"></span>
+        </div>
+      </section>
+
       <footer class="footer">
         <div class="footer_container">
           <h1 class="footer_logo">PENTAGON</h1>
@@ -365,12 +438,27 @@
             <h2 class="footer_section_heading">links</h2>
             <nav class="footer_nav">
               <ul class="footer_nav_list">
-                <li><a href="#" class="nav_link">home</a></li>
-                <li><a href="#" class="nav_link">services</a></li>
-                <li><a href="#" class="nav_link">service area</a></li>
-                <li><a href="#" class="nav_link">gift certificates</a></li>
-                <li><a href="#" class="nav_link">gallery</a></li>
-                <li><a href="#" class="nav_link">testimonials</a></li>
+                <li><a href="index.html" class="nav_link">home</a></li>
+                <li><a href="service.html" class="nav_link">services</a></li>
+                <li>
+                  <a href="service_area.html" class="nav_link">service area</a>
+                </li>
+                <li>
+                  <a href="gift_certificate.html" class="nav_link"
+                    >gift certificates</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#gallery" class="nav_link">gallery</a>
+                </li>
+                <li>
+                  <a href="index.html#testimonial" class="nav_link"
+                    >testimonials</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#contact" class="nav_link">contact</a>
+                </li>
               </ul>
             </nav>
           </section>
