@@ -10,6 +10,9 @@
   position: relative;
   max-width: 150rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
   /* background-color: dodgerblue; */
 }
 
@@ -56,6 +59,20 @@
   z-index: 1;
 }
 
+.section_service_area .section_title {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.168rem;
+  font-weight: 400;
+  color: var(--primary_red);
+  margin-top: 7rem;
+  text-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.2);
+}
+
 .service_area_container__1_2 {
   position: relative;
   width: 100%;
@@ -80,4 +97,139 @@
   top: 0.5rem;
   filter: blur(0.6rem);
   z-index: 0;
+}
+
+/* ==============map location pins============== */
+.service_img_container .i {
+  position: absolute;
+  z-index: 3;
+}
+
+.service_img_container .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--primary_dark);
+}
+
+.alexandria {
+  top: 32rem;
+  left: 84rem;
+}
+.vienna {
+  bottom: 24rem;
+  left: 66.1rem;
+}
+.laurel {
+  top: 15.2rem;
+  right: 42.7rem;
+}
+.mclean {
+  top: 25.2rem;
+  left: 73.9rem;
+}
+.arlington {
+  bottom: 22.9rem;
+  right: 66.8rem;
+}
+.rockville {
+  top: 14.4rem;
+  left: 75.6rem;
+}
+.fort_belvoir {
+  bottom: 12.3rem;
+  right: 72.7rem;
+}
+.burke {
+  bottom: 17.6rem;
+  left: 66.5rem;
+}
+.annandale {
+  bottom: 20rem;
+  left: 73.2rem;
+}
+.leesburg {
+  top: 14.2rem;
+  left: 37.1rem;
+}
+.catonsville {
+  top: 4.5rem;
+  right: 32.4rem;
+}
+.chantilly {
+  bottom: 24.7rem;
+  left: 48.4rem;
+}
+.adlie {
+  top: 22rem;
+  left: 29.1rem;
+}
+.reston {
+  top: 23.4rem;
+  left: 54.8rem;
+}
+.gainesville {
+  bottom: 16.1rem;
+  left: 34.4rem;
+}
+.springfield {
+  bottom: 17rem;
+  right: 74.1rem;
+}
+.annapolis {
+  right: 7.1rem;
+  top: 22.7rem;
+}
+.sterling {
+  top: 20rem;
+  left: 50.3rem;
+}
+.lorton {
+  bottom: 11.3rem;
+  left: 68.1rem;
+}
+.bethesda {
+  top: 21.6rem;
+  right: 65.5rem;
+}
+.glen_burnie {
+  top: 10.4rem;
+  right: 22rem;
+}
+.clinton {
+  bottom: 16.9rem;
+  right: 47.8rem;
+}
+.silver_spring {
+  top: 20rem;
+  right: 59.9rem;
+}
+.clifton {
+  bottom: 18rem;
+  left: 51.1rem;
+}
+.falls_church {
+  bottom: 24.2rem;
+  right: 73.8rem;
+}
+
+/* ==============map background name============== */
+.map_name {
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  z-index: 1;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.map_name_1 {
+  left: 40rem;
+  top: 20rem;
+}
+.map_name_2 {
+  right: 11rem;
+  top: 20rem;
 }
