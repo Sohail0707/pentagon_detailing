@@ -33,6 +33,7 @@ allLinks.forEach((link) => {
       const curerntURL = new URL(window.location.href);
       curerntURL.pathname = linkHref;
       let newURL = curerntURL.toString();
+      window.location.href = newURL;
     }
   });
 });
