@@ -15,6 +15,10 @@
     font-size: 50%;
   }
 
+  .main_nav {
+    padding: 0 4.8rem;
+  }
+
   .service_container__1_2 {
     grid-template-columns: minmax(32rem, 1fr) 1fr 1fr 1fr;
   }
@@ -25,10 +29,6 @@
 }
 
 @media (max-width: 75em) {
-  .main_nav {
-    padding: 0 4.8rem;
-  }
-
   .section_service {
     padding: 12rem 4.8rem;
   }

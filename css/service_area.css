@@ -444,3 +444,35 @@
   letter-spacing: 0.32rem;
   text-align: center;
 }
+
+.location_name_container div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.location_name_container .location_link:is(:link, :visited) {
+  text-decoration: none;
+  display: block;
+  line-height: 1;
+  font-size: 2rem;
+  padding: 1.2rem 1.6rem;
+  color: var(--primary_dark);
+  border-radius: 0.8rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  /* border: 0.2rem solid #fff; */
+  /* box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); */
+}
+
+.location_name_container .location_link.va:is(:link, :visited) {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.location_name_container .location_link.md:is(:link, :visited) {
+  background: rgba(184, 212, 255, 0.4);
+}

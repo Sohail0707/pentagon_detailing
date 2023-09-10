@@ -14,4 +14,18 @@
   html {
     font-size: 50%;
   }
+
+  .main_nav {
+    padding: 0 4.8rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .section_service_area {
+    padding: 12rem 8rem;
+  }
+
+  .footer {
+    padding: 8rem 4.8rem;
+  }
 }
