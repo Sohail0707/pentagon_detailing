@@ -14,6 +14,8 @@ let pathName =
   window.location.pathname === "/" ? "/index.html" : window.location.pathname;
 const currentPage = pathName.replace("/", "");
 const allLinks = document.querySelectorAll("a");
+console.log(pathName);
+console.log(currentPage);
 
 allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
