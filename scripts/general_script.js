@@ -21,21 +21,26 @@ allLinks.forEach((link) => {
     e.preventDefault();
     const linkHref = link.getAttribute("href");
     const idMatch = linkHref.match(/[?&]id=([^&]+)/);
-    let id = "";
-    idMatch ? (id = idMatch[1]) : "";
-    console.log("the href link is" + linkHref);
-    console.log("id from href is" + id);
 
-    if (id) {
+    let hrefID = "";
+    idMatch ? (hrefID = idMatch[1]) : "";
+
+    console.log("the href link is " + linkHref);
+    console.log("id from href is " + hrefID);
+
+    if (hrefID) {
+      console.log(pathName.includes(linkHref));
       if (pathName.includes(linkHref)) {
-        const sectionEl = document.getElementById(id);
+        const sectionEl = document.getElementById(hrefID);
         sectionEl.scrollIntoView({ behavior: "smooth" });
       }
     }
 
     if (!pathName.includes(linkHref)) {
+      const curerntHref = window.location.href;
+      window.location.href = `${curerntHref}${linkHref}`;
+
       console.log(window.location.href);
-      // window.location.href = linkHref;
     }
   });
 });
