@@ -30,6 +30,7 @@ allLinks.forEach((link) => {
     }
 
     if (!linkHref.includes(currentPage)) {
+      console.log(linkHref);
       window.location.href = linkHref;
     }
   });
