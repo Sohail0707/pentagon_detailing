@@ -1,0 +1,35 @@
+.section_set_appoinement {
+  padding: 12rem 8rem;
+  background: var(--primary_light);
+}
+
+.set_appointment_container {
+  position: relative;
+}
+
+.section_set_appoinement .highlight_txt {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12.8rem;
+  line-height: 1;
+  letter-spacing: 1.666rem;
+  margin: 0 auto;
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.section_set_appoinement .section_title {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.168rem;
+  font-weight: 400;
+  color: var(--primary_red);
+  margin-top: 7rem;
+  text-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.2);
+}
