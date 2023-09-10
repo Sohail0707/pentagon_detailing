@@ -1,14 +1,16 @@
 "use strict";
-// Javascript code to implement smooth scrolling
-window.addEventListener("load", () => {
+
+window.onload = function () {
   const url = window.location.href;
   const urlParams = new URLSearchParams(url.split("?")[1]);
   const id = urlParams.get("id");
   if (id) {
     const sectionEl = document.getElementById(id);
-    sectionEl.scrollIntoView({ behavior: "smooth" });
+    setTimeout(function () {
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }, 1000); // 2 seconds delay
   }
-});
+};
 
 const pathName = window.location.pathname;
 const allLinks = document.querySelectorAll("a");
