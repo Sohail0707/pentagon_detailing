@@ -6,9 +6,7 @@ window.onload = function () {
   const id = urlParams.get("id");
   if (id) {
     const sectionEl = document.getElementById(id);
-    setTimeout(function () {
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }, 1000); // 2 seconds delay
+    sectionEl.scrollIntoView({ behavior: "smooth" });
   }
 };
 
