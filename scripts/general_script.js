@@ -38,9 +38,9 @@ allLinks.forEach((link) => {
 
     if (!pathName.includes(linkHref)) {
       const curerntHref = window.location.href;
-      window.location.href = `${curerntHref}${linkHref}`;
+      const editedHref = `${curerntHref}${linkHref}`;
 
-      console.log(window.location.href);
+      console.log(editedHref);
     }
   });
 });
