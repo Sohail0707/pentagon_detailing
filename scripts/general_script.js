@@ -29,6 +29,7 @@ allLinks.forEach((link) => {
 
     console.log("the href link is " + linkHref);
     console.log("id from href is " + hrefID);
+    console.log("the site name from href " + siteName);
 
     if (hrefID) {
       console.log(pathName.includes(siteName));
@@ -40,7 +41,7 @@ allLinks.forEach((link) => {
 
     if (!pathName.includes(siteName)) {
       const curerntHref = window.location.href;
-      const editedHref = `${curerntHref}${siteName}`;
+      window.location.href = `${curerntHref}${siteName.replace("/", "")}`;
 
       console.log(editedHref);
     }
