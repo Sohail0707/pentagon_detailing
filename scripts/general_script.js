@@ -11,10 +11,10 @@ window.addEventListener("load", () => {
 });
 
 let pathName = window.location.pathname;
-const currentPage = pathName.replace("/", "");
+// const currentPage = pathName.replace("/", "");
 const allLinks = document.querySelectorAll("a");
 console.log(pathName);
-console.log(currentPage);
+// console.log(currentPage);
 
 allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -26,15 +26,16 @@ allLinks.forEach((link) => {
     console.log("the href link is" + linkHref);
     console.log("id from href is" + id);
 
-    if (linkHref.includes(currentPage)) {
-      if (id) {
+    if (id) {
+      if (pathName.includes(linkHref)) {
         const sectionEl = document.getElementById(id);
         sectionEl.scrollIntoView({ behavior: "smooth" });
       }
     }
 
-    if (!linkHref.includes(currentPage)) {
-      window.location.href = linkHref;
+    if (!pathName.includes(linkHref)) {
+      console.log(window.location.href);
+      // window.location.href = linkHref;
     }
   });
 });
