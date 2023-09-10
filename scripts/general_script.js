@@ -21,9 +21,9 @@ allLinks.forEach((link) => {
     e.preventDefault();
     const linkHref = link.getAttribute("href");
     // const idMatch = linkHref.match(/[?&]id=([^&]+)/);
-    var url = new URL(linkHref, window.location.href);
-    var hrefID = url.searchParams.get("id");
-    console.log(hrefID);
+    const url = new URL(linkHref, window.location.href);
+    const hrefID = url.searchParams.get("id");
+    const siteName = url.pathname;
 
     // let hrefID = idMatch ? idMatch[1] : "";
 
@@ -31,16 +31,16 @@ allLinks.forEach((link) => {
     console.log("id from href is " + hrefID);
 
     if (hrefID) {
-      console.log(pathName.includes(linkHref));
-      if (pathName.includes(linkHref)) {
+      console.log(pathName.includes(siteName));
+      if (pathName.includes(siteName)) {
         const sectionEl = document.getElementById(hrefID);
         sectionEl.scrollIntoView({ behavior: "smooth" });
       }
     }
 
-    if (!pathName.includes(linkHref)) {
+    if (!pathName.includes(siteName)) {
       const curerntHref = window.location.href;
-      const editedHref = `${curerntHref}${linkHref}`;
+      const editedHref = `${curerntHref}${siteName}`;
 
       console.log(editedHref);
     }
