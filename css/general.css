@@ -37,6 +37,10 @@ main {
   overflow-x: hidden;
 }
 
+section {
+  overflow: hidden;
+}
+
 .i {
   display: flex;
   align-items: center;
