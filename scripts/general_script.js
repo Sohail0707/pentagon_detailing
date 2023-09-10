@@ -10,38 +10,38 @@ window.addEventListener("load", () => {
   }
 });
 
-let pathName = window.location.pathname;
-// const currentPage = pathName.replace("/", "");
+const pathName = window.location.pathname;
 const allLinks = document.querySelectorAll("a");
-console.log(pathName);
-// console.log(currentPage);
 
 allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const linkHref = link.getAttribute("href");
-    // const idMatch = linkHref.match(/[?&]id=([^&]+)/);
-    const url = new URL(linkHref, window.location.href);
-    const hrefID = url.searchParams.get("id");
-    const siteName = url.pathname;
+    const linkURL = new URL(linkHref, window.location.href);
+    const linkID = linkURL.searchParams.get("id");
+    const linkSiteName = linkURL.pathname;
 
-    // let hrefID = idMatch ? idMatch[1] : "";
+    // let linkID = idMatch ? idMatch[1] : "";
 
-    console.log("the href link is " + linkHref);
-    console.log("id from href is " + hrefID);
-    console.log("the site name from href " + siteName);
+    console.log("the anchor tag link " + linkHref);
+    console.log("id from anchor tag " + linkID);
+    console.log("the site name from anchor tag " + linkSiteName);
 
-    if (hrefID) {
-      if (pathName === siteName) {
-        console.log(pathName.includes(siteName));
-        const sectionEl = document.getElementById(hrefID);
+    if (linkID) {
+      if (pathName === linkSiteName) {
+        console.log(pathName.includes(linkSiteName));
+        const sectionEl = document.getElementById(linkID);
         sectionEl.scrollIntoView({ behavior: "smooth" });
       }
     }
 
-    if (pathName != siteName) {
-      const curerntHref = window.location.href;
-      window.location.href = `${curerntHref}${siteName.replace("/", "")}`;
+    if (pathName != linkSiteName) {
+      const curerntHref = window.location.pathname;
+      console.log("the current url is " + curerntHref);
+
+      // window.location.href = `${curerntHref}${linkSiteName.replace("/", "")}`;
+      let newURL = `${curerntHref}${linkHref.replace("/", "")}`;
+      console.log("the new url is " + newURL);
     }
   });
 });
