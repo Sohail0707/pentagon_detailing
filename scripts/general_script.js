@@ -21,10 +21,6 @@ allLinks.forEach((link) => {
     const linkID = linkURL.searchParams.get("id");
     const linkSiteName = linkURL.pathname;
 
-    console.log("link href is " + linkHref);
-    console.log("link url is " + linkURL);
-    console.log("link site name is " + linkSiteName);
-
     if (linkID) {
       if (pathName === linkSiteName) {
         console.log(pathName.includes(linkSiteName));
@@ -34,9 +30,6 @@ allLinks.forEach((link) => {
     }
 
     if (pathName != linkSiteName) {
-      const curerntURL = new URL(window.location.href);
-      curerntURL.pathname = linkHref;
-      let newURL = curerntURL.toString();
       window.location.href = linkURL;
     }
   });
