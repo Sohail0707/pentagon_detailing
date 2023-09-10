@@ -10,8 +10,7 @@ window.addEventListener("load", () => {
   }
 });
 
-let pathName =
-  window.location.pathname === "/" ? "/index.html" : window.location.pathname;
+let pathName = window.location.pathname;
 const currentPage = pathName.replace("/", "");
 const allLinks = document.querySelectorAll("a");
 console.log(pathName);
