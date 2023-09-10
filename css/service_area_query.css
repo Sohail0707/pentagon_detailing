@@ -1,31 +1,5 @@
-@media (min-width: 125em) {
-  html {
-    font-size: 68.75%;
-  }
-}
-
-@media (min-width: 143em) {
-  html {
-    font-size: 75%;
-  }
-}
-
-@media (max-width: 106em) {
-  html {
-    font-size: 50%;
-  }
-
-  .main_nav {
-    padding: 0 4.8rem;
-  }
-}
-
 @media (max-width: 75em) {
   .section_service_area {
-    padding: 12rem 8rem;
-  }
-
-  .footer {
-    padding: 8rem 4.8rem;
+    padding: 12rem 4.8rem;
   }
 }

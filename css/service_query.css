@@ -1,24 +1,4 @@
-@media (min-width: 125em) {
-  html {
-    font-size: 68.75%;
-  }
-}
-
-@media (min-width: 143em) {
-  html {
-    font-size: 75%;
-  }
-}
-
 @media (max-width: 106em) {
-  html {
-    font-size: 50%;
-  }
-
-  .main_nav {
-    padding: 0 4.8rem;
-  }
-
   .service_container__1_2 {
     grid-template-columns: minmax(32rem, 1fr) 1fr 1fr 1fr;
   }
@@ -31,10 +11,6 @@
 @media (max-width: 75em) {
   .section_service {
     padding: 12rem 4.8rem;
-  }
-
-  .footer {
-    padding: 8rem 4.8rem;
   }
 
   .service_container__1_2 {
