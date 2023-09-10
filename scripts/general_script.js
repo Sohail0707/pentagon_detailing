@@ -20,10 +20,12 @@ allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const linkHref = link.getAttribute("href");
-    const idMatch = linkHref.match(/[?&]id=([^&]+)/);
+    // const idMatch = linkHref.match(/[?&]id=([^&]+)/);
+    var url = new URL(linkHref, window.location.href);
+    var hrefID = url.searchParams.get("id");
+    console.log(id);
 
-    let hrefID = "";
-    idMatch ? (hrefID = idMatch[1]) : "";
+    // let hrefID = idMatch ? idMatch[1] : "";
 
     console.log("the href link is " + linkHref);
     console.log("id from href is " + hrefID);
