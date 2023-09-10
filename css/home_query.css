@@ -4,7 +4,17 @@
   }
 }
 
+@media (max-width: 85em) {
+  .header_container {
+    width: calc(100% - 16rem);
+    margin: 0;
+  }
+}
+
 @media (max-width: 75em) {
+  .header_container {
+    width: calc(100% - 9.6rem);
+  }
   /* setting the general padding left right */
 
   .section_hero {
