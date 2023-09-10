@@ -23,7 +23,7 @@ allLinks.forEach((link) => {
     // const idMatch = linkHref.match(/[?&]id=([^&]+)/);
     var url = new URL(linkHref, window.location.href);
     var hrefID = url.searchParams.get("id");
-    console.log(id);
+    console.log(hrefID);
 
     // let hrefID = idMatch ? idMatch[1] : "";
 
