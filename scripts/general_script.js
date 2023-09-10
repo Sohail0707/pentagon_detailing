@@ -43,7 +43,7 @@ allLinks.forEach((link) => {
 
       // window.location.href = `${curerntHref}${linkSiteName.replace("/", "")}`;
       // let newURL = `${curerntHref}${linkHref.replace("/", "")}`;
-      let newURL = `${curerntURL.replace(curerntHref, linkHref)}`;
+      let newURL = `${curerntURL.replace(`${curerntHref}`, linkHref)}`;
       console.log("the new url is " + newURL);
     }
   });
