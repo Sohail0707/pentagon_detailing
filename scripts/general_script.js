@@ -36,11 +36,14 @@ allLinks.forEach((link) => {
     }
 
     if (pathName != linkSiteName) {
+      const curerntURL = window.location.href;
       const curerntHref = window.location.pathname;
-      console.log("the current url is " + curerntHref);
+      console.log("the current url is " + window.location.href);
+      console.log("the current url site name is " + curerntHref);
 
       // window.location.href = `${curerntHref}${linkSiteName.replace("/", "")}`;
-      let newURL = `${curerntHref}${linkHref.replace("/", "")}`;
+      // let newURL = `${curerntHref}${linkHref.replace("/", "")}`;
+      let newURL = `${curerntURL.replace(curerntHref, linkHref)}`;
       console.log("the new url is " + newURL);
     }
   });
