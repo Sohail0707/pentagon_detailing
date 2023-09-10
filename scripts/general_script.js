@@ -32,18 +32,16 @@ allLinks.forEach((link) => {
     console.log("the site name from href " + siteName);
 
     if (hrefID) {
-      console.log(pathName.includes(siteName));
-      if (pathName.includes(siteName)) {
+      if (pathName === siteName) {
+        console.log(pathName.includes(siteName));
         const sectionEl = document.getElementById(hrefID);
         sectionEl.scrollIntoView({ behavior: "smooth" });
       }
     }
 
-    if (!pathName.includes(siteName)) {
+    if (pathName != siteName) {
       const curerntHref = window.location.href;
       window.location.href = `${curerntHref}${siteName.replace("/", "")}`;
-
-      console.log(editedHref);
     }
   });
 });
