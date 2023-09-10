@@ -23,14 +23,17 @@ allLinks.forEach((link) => {
     const idMatch = linkHref.match(/[?&]id=([^&]+)/);
     let id = "";
     idMatch ? (id = idMatch[1]) : "";
+    console.log("the href link is" + linkHref);
+    console.log("id from href is" + id);
 
     if (linkHref.includes(currentPage)) {
-      const sectionEl = document.getElementById(id);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
+      if (id) {
+        const sectionEl = document.getElementById(id);
+        sectionEl.scrollIntoView({ behavior: "smooth" });
+      }
     }
 
     if (!linkHref.includes(currentPage)) {
-      console.log(linkHref);
       window.location.href = linkHref;
     }
   });
