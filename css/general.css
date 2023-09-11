@@ -31,7 +31,6 @@ body {
 }
 
 main {
-  /* width: 170rem; */
   width: 100%;
   position: relative;
   overflow-x: hidden;
@@ -46,10 +45,6 @@ section {
   align-items: center;
   justify-content: center;
 }
-
-/* .icon {
-  color: var(--primary_red);
-} */
 
 /* ===============COMMON STYLES ANS LAYOUT=============== */
 

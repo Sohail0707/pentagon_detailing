@@ -64,6 +64,101 @@
   border-radius: 50%;
   background: var(--lite_blue);
   left: -29rem;
-  bottom: -18rem;
+  bottom: 0;
   filter: blur(30rem);
+}
+
+/* ============================================== */
+.gift_certificate_container__1_2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  margin-top: 4.8rem;
+  /* background-color: crimson; */
+}
+
+.gift_card_img_container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 70rem;
+}
+
+.gift_card_img_container::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.gift_card_img {
+  width: 100%;
+}
+
+.gift_card_buy_container {
+  /* background-color: darkturquoise; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 19.6rem;
+}
+
+.section_gift_certificate .section_title {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.168rem;
+  font-weight: 500;
+  color: var(--primary_dark);
+  text-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.4rem;
+}
+
+.btn_buy_gift {
+  text-decoration: none;
+  display: flex;
+  padding: 2rem 4.8rem;
+  line-height: 1;
+  font-size: 3.2rem;
+  letter-spacing: 0.16rem;
+  color: var(--primary_red);
+  border-radius: 0.8rem;
+  border: 0.3rem solid var(--primary_red);
+  font-weight: 600;
+  background: transparent;
+}
+
+.timing_container {
+  display: flex;
+  justify-content: center;
+  gap: 6.4rem;
+  color: var(--primary_dark);
+}
+
+.timing_container div {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.timing_container h2 {
+  font-size: 3.2rem;
+  letter-spacing: 0.16rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primary_dark);
+  text-transform: uppercase;
+}
+
+.terms_container {
+  margin-top: 12.8rem;
+}
+
+.gift_card_terms {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--gray_2);
+  line-height: 1.2;
+  text-align: center;
 }
