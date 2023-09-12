@@ -20,16 +20,12 @@ allLinks.forEach((link) => {
     const linkHref = link.getAttribute("href");
     const linkURL = new URL(linkHref, window.location.href);
     const linkID = linkURL.searchParams.get("id");
-    const linkSiteName = linkURL.pathname;
+    let linkSiteName = linkURL.pathname;
 
-    if (linkID) {
-      if (pathName === linkSiteName || pathName === "/") {
-        const sectionEl = document.getElementById(linkID);
-        sectionEl.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-
-    if (pathName != linkSiteName && pathName != "/") {
+    if (pathName === linkSiteName) {
+      const sectionEl = document.getElementById(linkID);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    } else if (pathName != linkSiteName) {
       window.location.href = linkURL;
     }
   });
