@@ -46,6 +46,19 @@ section {
   justify-content: center;
 }
 
+.main_nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(225, 255, 255, 0.7);
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+.main_nav.sticky div {
+  padding: 2.4rem 0;
+}
+
 /* ===============COMMON STYLES ANS LAYOUT=============== */
 
 /* -------------Main Navigation------------- */
@@ -59,7 +72,6 @@ section {
 
 .main_nav div {
   padding: 3.2rem 0;
-  /* border-bottom: 0.2rem solid var(--gray_2); */
   display: flex;
   align-items: center;
   justify-content: space-between;
