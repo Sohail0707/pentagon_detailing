@@ -31,6 +31,19 @@ allLinks.forEach((link) => {
   });
 });
 
+// Function to scroll the window to the top
+const scrollBtn = document.querySelector(".scroll_top");
+
+function scrollToTop() {
+  // Scroll the window to the top
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+// scrollBtn.addEventListener("click", scrollToTop());
+
 // Sticky nav bar===========================================
 
 function addStickyClass() {
