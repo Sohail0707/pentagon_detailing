@@ -60,9 +60,26 @@ function addStickyClass() {
 window.addEventListener("scroll", addStickyClass);
 
 // mobile navigation=========================
+// ==========================================
 const mobileBtn = document.querySelector(".mobile_nav_btn");
 const mainNav = document.querySelector(".main_nav");
+const body = document.querySelector("body");
+const navLinks = document.querySelectorAll(".main_nav .nav_link");
 
 mobileBtn.addEventListener("click", () => {
   mainNav.classList.toggle("nav_open");
+  mainNav.classList.contains("nav_open")
+    ? (body.style.overflowY = "hidden")
+    : (body.style.overflow = "auto");
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mainNav.classList.contains("nav_open")
+      ? mainNav.classList.remove("nav_open")
+      : "";
+    mainNav.classList.contains("nav_open")
+      ? (body.style.overflowY = "hidden")
+      : (body.style.overflow = "auto");
+  });
 });
