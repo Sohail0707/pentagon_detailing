@@ -13,17 +13,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 12rem;
 }
 
 .section_gift_certificate .highlight_txt {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
+
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   font-size: 12.8rem;
   line-height: 1;
   letter-spacing: 1.666rem;
-  margin: 0 auto;
   text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
@@ -41,7 +46,7 @@
   position: relative;
   z-index: 2;
   max-width: 100rem;
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
 
 .shape_13 {

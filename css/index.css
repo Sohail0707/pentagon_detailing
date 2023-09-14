@@ -271,7 +271,15 @@ header .highlight_txt {
   margin-top: 1.6rem;
 }
 
-.section_about .btn_contact {
+.btn_contact {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.136rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  height: fit-content;
   color: var(--primary_dark);
   border: 0.3rem solid var(--primary_dark);
   font-weight: 600;

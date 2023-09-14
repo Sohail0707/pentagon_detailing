@@ -15,6 +15,10 @@
   .header_container {
     width: calc(100% - 9.6rem);
   }
+
+  header .highlight_txt {
+    font-size: 19.6rem;
+  }
   /* setting the general padding left right */
 
   .section_hero {

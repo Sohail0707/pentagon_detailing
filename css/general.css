@@ -27,12 +27,12 @@ body {
   font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 main {
-  width: 100%;
+  align-items: center;
   position: relative;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -50,12 +50,11 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
-  background: rgba(225, 255, 255, 0.8);
+  background: rgba(225, 255, 255, 0.9);
   backdrop-filter: blur(1rem);
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
 }
-.main_nav.sticky div {
+.main_nav.sticky .nav_container {
   padding: 2.4rem 0;
 }
 
@@ -74,7 +73,7 @@ section {
   cursor: pointer;
   background-color: var(--lite_red);
   color: var(--primary_dark);
-  z-index: 7;
+  z-index: 4;
   text-orientation: upright;
 }
 
@@ -93,16 +92,31 @@ section {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 0 8rem;
-  z-index: 1;
-}
-
-.main_nav div {
-  padding: 3.2rem 0;
+  padding: 3.2rem 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 5;
 }
+
+/* ==================mobile navigation================== */
+.mobile_nav_btn {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.main_nav i {
+  width: 4rem;
+  height: 4rem;
+  color: var(--primary_dark);
+}
+
+i[name="close"] {
+  display: none;
+}
+/* ---------------------------------- */
 
 .nav_list {
   position: absolute;
@@ -111,9 +125,11 @@ section {
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
+  justify-content: center;
   width: max-content;
   list-style: none;
   gap: 3.2rem;
+  z-index: 2;
 }
 
 .nav_link:is(:link, :visited) {
@@ -127,6 +143,15 @@ section {
   color: var(--gray_1);
 }
 
+.logo {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--primary_orange);
+  position: relative;
+  z-index: 1;
+}
+
 .nav_home_container {
   display: flex;
   width: max-content;
@@ -137,7 +162,7 @@ section {
   gap: 3.2rem;
 }
 
-.btn_contact {
+.btn_set_appointment {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -150,6 +175,12 @@ section {
   box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.1);
   color: var(--primary_light);
   height: fit-content;
+  position: relative;
+  z-index: 3;
+}
+
+.mobile.btn_set_appointment {
+  display: none;
 }
 
 /* ////////////////////////////////////////////////// */

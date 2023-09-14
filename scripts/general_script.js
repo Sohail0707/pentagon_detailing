@@ -33,16 +33,13 @@ allLinks.forEach((link) => {
 
 // Function to scroll the window to the top
 const scrollBtn = document.querySelector(".scroll_top");
-
+// this function has been called from html code
 function scrollToTop() {
-  // Scroll the window to the top
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
-
-// scrollBtn.addEventListener("click", scrollToTop());
 
 // Sticky nav bar===========================================
 
@@ -61,3 +58,11 @@ function addStickyClass() {
 }
 
 window.addEventListener("scroll", addStickyClass);
+
+// mobile navigation=========================
+const mobileBtn = document.querySelector(".mobile_nav_btn");
+const mainNav = document.querySelector(".main_nav");
+
+mobileBtn.addEventListener("click", () => {
+  mainNav.classList.toggle("nav_open");
+});
