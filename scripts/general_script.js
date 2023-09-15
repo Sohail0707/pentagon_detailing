@@ -86,6 +86,7 @@ navLinks.forEach((link) => {
 
 // Navigation text indicatior ===============
 const navigationLinks = document.querySelectorAll(".nav_link");
+
 window.onload = function () {
   navigationLinks.forEach((link) => {
     const linkHref = link.getAttribute("href");
