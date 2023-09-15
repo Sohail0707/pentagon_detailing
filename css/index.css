@@ -91,7 +91,7 @@ header .highlight_txt {
 }
 
 .hero_img {
-  width: 99rem;
+  max-width: 99rem;
   height: auto;
 }
 
@@ -327,6 +327,8 @@ header .highlight_txt {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* gap: 3.2rem; */
+  flex-wrap: wrap;
 }
 
 .about_summery_container .box {

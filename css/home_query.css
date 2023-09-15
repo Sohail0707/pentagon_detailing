@@ -128,3 +128,91 @@
     width: 100%;
   }
 }
+
+/* width less than 960px */
+@media (max-width: 60em) {
+  .header_container {
+    width: 100%;
+  }
+
+  header .highlight_txt {
+    font-size: 16.8rem;
+  }
+
+  .main_heading {
+    font-size: 9.6rem;
+    width: auto;
+    max-width: 83rem;
+  }
+
+  .hero_img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .customer_count_container {
+    left: 4.8rem;
+  }
+
+  /* About section============================ */
+  .about_container__1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+    row-gap: 4.8rem;
+  }
+
+  .about_txt_container {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_img_container {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about_summery_container {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+
+  .about_txt {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .section_about .highlight_txt {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section_about {
+    padding: 8rem 4.8rem;
+  }
+
+  .about_container {
+    max-width: 85rem;
+  }
+
+  .about_summery_container {
+    margin-top: 6.4rem;
+  }
+
+  .about_summery_container .num {
+    font-size: 6.4rem;
+  }
+
+  .about_summery_container .line {
+    height: 4rem;
+  }
+
+  .about_summery_container .txt {
+    font-size: 1.6rem;
+  }
+}

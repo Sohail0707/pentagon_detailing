@@ -26,6 +26,15 @@
 @media (max-width: 75em) {
   .main_nav {
     padding: 2.4rem 4.8rem;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-left: 4.8rem;
+  }
+
+  .btn_set_appointment {
+    margin-left: auto;
   }
 
   /* =================mobile navigation================= */
@@ -62,13 +71,13 @@
     gap: 3.2rem;
   }
 
-  .logo {
+  /* .logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-  }
+  } */
 
   .mobile_nav_btn {
     display: flex;
