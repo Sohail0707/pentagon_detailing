@@ -250,7 +250,7 @@
   }
 
   .service_img {
-    display: block;
+    display: inline-block;
     width: 60rem;
     height: auto;
   }
