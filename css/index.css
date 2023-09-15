@@ -372,7 +372,7 @@ header .highlight_txt {
 .section_service {
   position: relative;
   background: var(--primary_light);
-  padding: 12.8rem 8rem;
+  padding: 12rem 8rem 8rem;
   overflow: hidden;
 }
 
@@ -434,17 +434,17 @@ header .highlight_txt {
 .service_img_container {
   position: relative;
   width: 100%;
+  padding: 10rem 0;
+}
+
+.service_img_container__1 {
+  width: 85rem;
+  margin: 0 auto;
+  position: relative;
 }
 
 .service_img {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   display: inline-block;
-  width: 85rem;
-  height: auto;
-  margin: 0 auto;
-  padding: 10rem 0;
 }
 
 .service_img img {
@@ -458,189 +458,213 @@ header .highlight_txt {
 .indicators {
   position: absolute;
   display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background: var(--gray_2);
+  border-radius: 50%;
+  z-index: 2;
 }
 
-.indicators .ind_txt {
+.line__1 {
+  height: 0.2rem;
+  width: 10rem;
+  border-radius: 0.2rem;
+  background: var(--gray_2);
+  position: absolute;
+  transform-origin: left;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.line__2 {
+  height: 0.2rem;
+  width: auto;
+  border-radius: 0.2rem;
+  background: var(--gray_2);
+  position: absolute;
+  transform-origin: left;
+  top: 50%;
+}
+
+.line__2::after {
+  content: "car detailing";
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1;
   color: var(--primary_orange);
   opacity: 0.8;
-  /* text-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.17); */
+  display: block;
+  width: max-content;
+
+  position: relative;
+  top: -0.8rem;
+  transform: translateY(-100%);
 }
 
-.indicators .lines {
-  display: inline-block;
-  position: absolute;
-  height: 0.2rem;
-  background: var(--gray_2);
-  border-radius: 1rem;
+.indicator__1 .line__2::after {
+  content: "window and mirror cleaning";
+}
+.indicator__2 .line__2::after {
+  content: "engine bay detailing";
+}
+.indicator__3 .line__2::after {
+  content: "vacuming";
+}
+.indicator__4 .line__2::after {
+  content: "rain-x application";
+}
+.indicator__5 .line__2::after {
+  content: "paint solution application";
+}
+.indicator__6 .line__2::after {
+  content: "tire shining";
+}
+.indicator__7 .line__2::after {
+  content: "tire and rim cleaning";
+}
+.indicator__8 .line__2::after {
+  content: "shampoo/steam cleaning";
 }
 
-/* positioning indicators */
+/* Positioning the indicators======================= */
 .indicator__1 {
-  top: 0;
-  left: 16rem;
+  top: 12.3%;
+  right: 30.7%;
 }
 .indicator__2 {
-  top: 5.4rem;
-  left: -17rem;
+  top: 27.44%;
+  left: 21.52%;
 }
 .indicator__3 {
-  top: 17rem;
-  left: -26rem;
+  top: 52.68%;
+  left: 8%;
 }
 .indicator__4 {
-  bottom: 7.9rem;
-  left: -19.2rem;
+  bottom: 29.33%;
+  left: 16.7%;
 }
 .indicator__5 {
-  bottom: 0;
-  right: 11.7rem;
+  bottom: 34.38%;
+  left: 30.11%;
 }
 .indicator__6 {
-  bottom: 5.7rem;
-  right: -20.5rem;
+  bottom: 16.4%;
+  right: 12.47%;
 }
 .indicator__7 {
-  top: 19.2rem;
-  right: -27.8rem;
+  bottom: 29.33%;
+  right: 9.05%;
 }
 .indicator__8 {
-  top: 3rem;
-  right: -20.6rem;
+  top: 29.02%;
+  right: 16.47%;
 }
 
-/* positioning indicator line__1 */
-
-.indicator__1 .line__1,
-.indicator__2 .line__1,
-.indicator__3 .line__1,
-.indicator__7 .line__1,
-.indicator__8 .line__1 {
-  width: 100%;
-  bottom: -0.8rem;
+/* Fixing the line 1 */
+.indicator__1 .line__1 {
+  transform: translateY(-50%) rotate(-135deg);
 }
-
-.indicator__4 .line__1,
-.indicator__5 .line__1,
-.indicator__6 .line__1 {
-  width: 100%;
-  top: -0.8rem;
-}
-
-/* positioning indicator line__2 */
 .indicator__1 .line__2 {
-  transform-origin: left;
-  transform: translateX(100%) rotate(45deg);
-  bottom: -0.8rem;
-  right: 0.1rem;
-  width: 15.6rem;
+  transform-origin: right;
+  right: 0;
+  transform: translateY(-50%) rotate(135deg);
 }
 
+.indicator__2 .line__1 {
+  transform: translateY(-50%) rotate(-135deg);
+}
 .indicator__2 .line__2 {
+  transform-origin: right;
+  right: 0;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.indicator__3 .line__1 {
+  transform: translateY(-50%) rotate(-135deg);
+}
+.indicator__3 .line__2 {
+  transform-origin: right;
+  right: 0;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.indicator__4 .line__1 {
+  transform: translateY(-50%) rotate(135deg);
+}
+.indicator__4 .line__2 {
+  transform-origin: right;
+  right: 0;
+  transform: translateY(-50%) rotate(-135deg);
+}
+.indicator__4 .line__2::after {
+  transform: translateY(100%);
+}
+
+.indicator__5 .line__1 {
+  transform: translateY(-50%) rotate(45deg);
+}
+.indicator__5 .line__2 {
   transform-origin: left;
-  transform: translateX(100%) rotate(40deg);
-  bottom: -0.8rem;
-  right: 0.1rem;
-  width: 16rem;
+  left: 100%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.indicator__5 .line__2::after {
+  transform: translateY(100%);
+}
+
+.indicator__6 .line__1 {
+  transform: translateY(-50%) rotate(45deg);
+}
+.indicator__6 .line__2 {
+  transform-origin: left;
+  left: 100%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.indicator__6 .line__2::after {
+  transform: translateY(100%);
+}
+
+.indicator__7 .line__1 {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.indicator__7 .line__2 {
+  transform-origin: left;
+  left: 100%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.indicator__8 .line__1 {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.indicator__8 .line__2 {
+  transform-origin: left;
+  left: 100%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* extra edit====================== */
+.indicator__1 .line__1 {
+  width: 15rem;
+}
+.indicator__4 .line__1 {
+  width: 12rem;
+}
+.indicator__5 .line__1 {
+  width: 20rem;
+}
+.indicator__6 .line__1 {
+  width: 8rem;
+}
+.indicator__8 .line__1 {
+  width: 12rem;
 }
 
 .indicator__3 .line__2 {
-  transform-origin: left;
-  transform: translateX(100%) rotate(20deg);
-  bottom: -0.8rem;
-  right: 0.1rem;
-  width: 22rem;
+  width: 20rem;
 }
 
-.indicator__4 .line__2 {
-  transform-origin: left;
-  transform: translateX(100%) rotate(-32deg);
-  top: -0.8rem;
-  right: 0.1rem;
-  width: 17rem;
-}
-
-.indicator__5 .line__2 {
-  transform-origin: right;
-  transform: translateX(-100%) rotate(50deg);
-  top: -0.8rem;
-  left: 0.1rem;
-  width: 25rem;
-}
-
-.indicator__6 .line__2 {
-  transform-origin: right;
-  transform: translateX(-100%) rotate(33deg);
-  top: -0.8rem;
-  left: 0.1rem;
-  width: 15.6rem;
-}
-
-.indicator__7 .line__2 {
-  transform-origin: right;
-  transform: translateX(-100%) rotate(-35deg);
-  bottom: -0.8rem;
-  left: 0.1rem;
-  width: 13rem;
-}
-
-.indicator__8 .line__2 {
-  transform-origin: right;
-  transform: translateX(-100%) rotate(-60deg);
-  bottom: -0.8rem;
-  left: 0.1rem;
-  width: 15rem;
-}
-
-/* positioning the dots inside the indicatord */
-.indicators .dot {
-  position: absolute;
-  height: 1rem;
-  width: 1rem;
-  background: var(--gray_3);
-  border-radius: 50%;
-}
-
-.indicator__1 .line__1 .dot,
-.indicator__2 .line__1 .dot,
-.indicator__3 .line__1 .dot,
-.indicator__4 .line__1 .dot {
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-}
-
-.indicator__5 .line__1 .dot,
-.indicator__6 .line__1 .dot,
-.indicator__7 .line__1 .dot,
-.indicator__8 .line__1 .dot {
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-}
-
-.indicator__1 .line__2 .dot,
-.indicator__2 .line__2 .dot,
-.indicator__3 .line__2 .dot,
-.indicator__4 .line__2 .dot {
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-}
-
-.indicator__5 .line__2 .dot,
-.indicator__6 .line__2 .dot,
-.indicator__7 .line__2 .dot,
-.indicator__8 .line__2 .dot {
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-}
-
-/* //////////////////////////////////////////////////// */
 /* button in the service section */
 .btn_service:is(:link, :visited) {
   text-decoration: none;
