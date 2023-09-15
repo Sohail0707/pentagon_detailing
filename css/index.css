@@ -487,6 +487,16 @@ header .highlight_txt {
   top: 50%;
 }
 
+.line__2::before {
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  background: var(--gray_2);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
 .line__2::after {
   content: "car detailing";
   font-size: 2rem;
@@ -503,6 +513,23 @@ header .highlight_txt {
   transform: translateY(-100%);
 }
 
+/* indicator dots */
+.indicator__1 .line__2::before,
+.indicator__2 .line__2::before,
+.indicator__3 .line__2::before,
+.indicator__4 .line__2::before {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.indicator__5 .line__2::before,
+.indicator__6 .line__2::before,
+.indicator__7 .line__2::before,
+.indicator__8 .line__2::before {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+/* text contents */
 .indicator__1 .line__2::after {
   content: "window and mirror cleaning";
 }
