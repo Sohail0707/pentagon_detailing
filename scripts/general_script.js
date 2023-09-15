@@ -89,7 +89,6 @@ const navigationLinks = document.querySelectorAll(".nav_link");
 window.onload = function () {
   navigationLinks.forEach((link) => {
     const linkHref = link.getAttribute("href");
-
     pathName === linkHref ? link.classList.add("current_site") : "";
   });
 };
