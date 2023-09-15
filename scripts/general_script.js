@@ -1,6 +1,9 @@
 "use strict";
 
-// Smooth scrolling========================================
+// Smooth scrolling=======================================
+const pathName = window.location.pathname;
+const allLinks = document.querySelectorAll("a");
+
 window.onload = function () {
   const url = window.location.href;
   const urlParams = new URLSearchParams(url.split("?")[1]);
@@ -10,9 +13,6 @@ window.onload = function () {
     sectionEl.scrollIntoView({ behavior: "smooth" });
   }
 };
-
-const pathName = window.location.pathname;
-const allLinks = document.querySelectorAll("a");
 
 allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -42,7 +42,6 @@ function scrollToTop() {
 }
 
 // Sticky nav bar===========================================
-
 function addStickyClass() {
   const navBar = document.querySelector(".main_nav");
   if (!navBar) return; // Make sure the nav bar element exists
@@ -60,7 +59,7 @@ function addStickyClass() {
 window.addEventListener("scroll", addStickyClass);
 
 // mobile navigation=========================
-// ==========================================
+
 const mobileBtn = document.querySelector(".mobile_nav_btn");
 const mainNav = document.querySelector(".main_nav");
 const body = document.querySelector("body");
@@ -83,3 +82,14 @@ navLinks.forEach((link) => {
       : (body.style.overflow = "auto");
   });
 });
+// ==========================================
+
+// Navigation text indicatior ===============
+const navigationLinks = document.querySelectorAll(".nav_link");
+window.onload = function () {
+  navigationLinks.forEach((link) => {
+    const linkHref = link.getAttribute("href");
+
+    pathName === linkHref ? link.classList.add("current_site") : "";
+  });
+};
