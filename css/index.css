@@ -422,7 +422,6 @@ header .highlight_txt {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 10rem; */
   z-index: 3;
 }
 
@@ -923,6 +922,7 @@ header .highlight_txt {
   top: -2rem;
   left: 50%;
   transform: translateX(-50%);
+  width: max-content;
   text-transform: uppercase;
   font-size: 2.4rem;
   letter-spacing: 0.168rem;
