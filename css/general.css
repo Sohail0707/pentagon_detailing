@@ -251,7 +251,8 @@ i[name="close"] {
   justify-content: space-between;
   align-items: baseline;
   height: 100%;
-  /* background-color: dodgerblue; */
+  /* background-color: coral; */
+  gap: 3.2rem;
 }
 
 .footer_location_box,

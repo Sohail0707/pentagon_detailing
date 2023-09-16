@@ -71,14 +71,6 @@
     gap: 3.2rem;
   }
 
-  /* .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  } */
-
   .mobile_nav_btn {
     display: flex;
   }
@@ -95,5 +87,32 @@
 
   .footer {
     padding: 8rem 4.8rem;
+  }
+}
+
+@media (max-width: 60em) {
+  /* -----------------FOOTER----------------- */
+  .footer_container {
+    /* background-color: royalblue; */
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "logo sect1"
+      "logo sect2"
+      "logo sect3"
+      "copyright copyright";
+    row-gap: 6rem;
+    column-gap: 5rem;
+  }
+
+  .footer_nav_list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer_location_box,
+  .footer_phone_box {
+    flex-direction: row;
+    align-items: center;
   }
 }

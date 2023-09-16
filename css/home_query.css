@@ -79,4 +79,264 @@
 
 /* width less than 960px */
 @media (max-width: 60em) {
+  /* --------------HERO SECTION-------------- */
+  header .highlight_txt {
+    font-size: 14.4rem;
+  }
+
+  .section_hero {
+    width: 76.8rem;
+    margin: 0 auto;
+    /* background-color: crimson; */
+  }
+
+  .main_heading {
+    width: 100%;
+    font-size: 9.6rem;
+  }
+
+  /* -------------ABOUT SECTION------------- */
+  .about_container {
+    max-width: 76.8rem;
+    /* background-color: goldenrod; */
+  }
+
+  .section_about .highlight_txt {
+    font-size: 12.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about_container__1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 0;
+    row-gap: 8rem;
+  }
+
+  .about_txt_container {
+    grid-column: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section_about .section_title {
+    margin-top: 4.8rem;
+  }
+
+  .about_txt {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 1.6rem;
+  }
+
+  .btn_contact {
+    margin-top: 8rem;
+  }
+
+  .about_img_container {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    max-width: 70rem;
+    margin: 0 auto;
+    /* background-color: seagreen; */
+  }
+
+  .about_summery_container {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    gap: 2.4rem;
+    justify-content: space-evenly;
+  }
+
+  .about_summery_container .box {
+    gap: 1.6rem;
+  }
+
+  .about_summery_container .num {
+    font-size: 6.4rem;
+  }
+
+  .about_summery_container .line {
+    height: 4rem;
+  }
+
+  .about_summery_container .txt {
+    font-size: 1.6rem;
+  }
+
+  /* ---------------SERVICE SECTION--------------- */
+  .service_container {
+    max-width: 76.8rem;
+    /* background-color: lightseagreen; */
+  }
+
+  .section_service .highlight_txt {
+    font-size: 12.8rem;
+  }
+
+  .service_img_container {
+    padding: 10rem;
+  }
+
+  .service_img_container__1 {
+    width: 100%;
+  }
+
+  /* indicators of the service section */
+  .indicator__1 .line__1 {
+    width: 10rem;
+  }
+
+  .indicator__2 .line__1 {
+    width: 5rem;
+  }
+
+  .indicator__3 .line__1 {
+    width: 4rem;
+  }
+  .indicator__3 .line__2 {
+    width: 12rem;
+  }
+
+  .indicator__4 .line__1 {
+    width: 8rem;
+    transform: translateY(-50%) rotate(115deg);
+  }
+  .indicator__4 .line__2 {
+    transform: translateY(-50%) rotate(-115deg);
+  }
+
+  .indicator__5 .line__1 {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .indicator__5 .line__2 {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .indicator__6 {
+    bottom: 23.34%;
+    right: 53.52%;
+  }
+  .indicator__6 .line__1 {
+    width: 8rem;
+  }
+  .indicator__6 .line__2::after {
+    content: "tire and rim cleaning";
+  }
+
+  .indicator__7 {
+    bottom: 16.4%;
+    right: 12.47%;
+  }
+  .indicator__7 .line__2::after {
+    content: "tire shining";
+  }
+
+  .indicator__8 {
+    top: 35%;
+    right: 30%;
+  }
+  .indicator__8 .line__1 {
+    transform: translateY(-50%) rotate(-60deg);
+  }
+  .indicator__8 .line__2 {
+    transform: translateY(-50%) rotate(60deg);
+  }
+
+  /* --------------GALLERY SECTION-------------- */
+  .gallery_container {
+    max-width: 76.8rem;
+    height: calc(40rem + 18rem);
+    /* background-color: deepskyblue; */
+  }
+
+  .section_gallery .highlight_txt {
+    font-size: 12.8rem;
+  }
+
+  .gallery_img {
+    height: 40rem;
+    width: 66rem;
+  }
+
+  .btn_gallery {
+    top: 50%;
+    left: auto;
+    height: 5.5rem;
+    width: 7rem;
+    border: 0.3rem solid var(--primary_light);
+  }
+
+  .btn_gallery .icon {
+    stroke-width: 0.2rem;
+  }
+
+  .btn_gallery.left {
+    left: 0;
+    transform: translate(0, 0);
+  }
+  .btn_gallery.right {
+    right: 0;
+    transform: translate(0, 0);
+  }
+
+  /* ------------SECTION TESTIMONIAL------------ */
+  .testimonial_container {
+    /* background-color: greenyellow; */
+    max-width: 76.8rem;
+    padding-top: 10rem;
+  }
+
+  .testimonial_container___2 {
+    width: 100%;
+    padding: 3rem 3.2rem;
+    gap: 6.4rem;
+  }
+
+  .review_box {
+    padding: 3.6rem;
+  }
+
+  .client_review {
+    font-size: 2rem;
+  }
+
+  .testimonial_container .highlight_txt {
+    font-size: 12.8rem;
+    top: -2rem;
+  }
+
+  .section_testimonial .section_title {
+    top: -3rem;
+  }
+
+  /* ---------------SECTION CONTACT--------------- */
+  .contact_container {
+    max-width: 76.8rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 0;
+    row-gap: 8rem;
+    /* background-color: tomato; */
+  }
+
+  .section_contact .highlight_txt {
+    font-size: 12.8rem;
+  }
+
+  .section_contact .section_title {
+    top: -3rem;
+  }
+
+  .contact_form_container {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .contact_location_container {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
 }
