@@ -21,3 +21,26 @@
     padding: 12rem 4.8rem;
   }
 }
+
+@media (max-width: 60em) {
+  .gift_certificate_container {
+    max-width: 76.8rem;
+  }
+  .gift_certificate_container_heading {
+    width: 100%;
+    font-size: 6.4rem;
+  }
+
+  .btn_buy_gift {
+    font-size: 1.6rem;
+  }
+
+  .timing_container h2 {
+    font-size: 1.6rem;
+  }
+
+  .gift_card_terms {
+    font-size: 1.6rem;
+    word-spacing: 0.5rem;
+  }
+}

@@ -47,7 +47,7 @@
 }
 
 .section_service_area .highlight_txt {
-  display: block;
+  display: inline-block;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -56,7 +56,12 @@
   letter-spacing: 1.666rem;
   margin: 0 auto;
   text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
-  z-index: 1;
+  /* background-color: blue; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
 }
 
 .section_service_area .section_title {
@@ -76,7 +81,7 @@
 .service_area_container__1_2 {
   position: relative;
   width: 100%;
-  /* background-color: darkseagreen; */
+  padding-top: 15rem;
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -254,152 +259,102 @@
 .alexandria {
   top: 58.71%;
   left: 56%;
-  /* top: 32rem;
-  left: 84rem; */
 }
 .vienna {
   bottom: 44.03%;
   left: 44.06%;
-  /* bottom: 24rem;
-  left: 66.1rem; */
 }
 .laurel {
   top: 27.88%;
   right: 28.46%;
-  /* top: 15.2rem;
-  right: 42.7rem; */
 }
 .mclean {
   top: 46.23%;
   left: 49.26%;
-  /* top: 25.2rem;
-  left: 73.9rem; */
 }
 .arlington {
   bottom: 42.01%;
   right: 44.53%;
-  /* bottom: 22.9rem;
-  right: 66.8rem; */
 }
 .rockville {
   top: 26.42%;
   left: 50.4%;
-  /* top: 14.4rem;
-  left: 75.6rem; */
 }
 .fort_belvoir {
   bottom: 22.56%;
   right: 48.46%;
-  /* bottom: 12.3rem;
-  right: 72.7rem; */
 }
 .burke {
   bottom: 32.29%;
   left: 44.33%;
-  /* bottom: 17.6rem;
-  left: 66.5rem; */
 }
 .annandale {
   bottom: 36.69%;
   left: 48.8%;
-  /* bottom: 20rem;
-  left: 73.2rem; */
 }
 .leesburg {
   top: 26.05%;
   left: 24.73%;
-  /* top: 14.2rem;
-  left: 37.1rem; */
 }
 .catonsville {
   top: 8.25%;
   right: 21.6%;
-  /* top: 4.5rem;
-  right: 32.4rem; */
 }
 .chantilly {
   bottom: 45.32%;
   left: 32.26%;
-  /* bottom: 24.7rem;
-  left: 48.4rem; */
 }
 .adlie {
   top: 40.36%;
   left: 19.4%;
-  /* top: 22rem;
-  left: 29.1rem; */
 }
 .reston {
   top: 42.93%;
   left: 36.53%;
-  /* top: 23.4rem;
-  left: 54.8rem; */
 }
 .gainesville {
   bottom: 29.54%;
   left: 22.93%;
-  /* bottom: 16.1rem;
-  left: 34.4rem; */
 }
 .springfield {
   bottom: 31.19%;
   right: 49.4%;
-  /* bottom: 17rem;
-  right: 74.1rem; */
 }
 .annapolis {
   top: 41.65%;
   right: 4.73%;
-  /* right: 7.1rem;
-  top: 22.7rem; */
 }
 .sterling {
   top: 36.69%;
   left: 33.53%;
-  /* top: 20rem;
-  left: 50.3rem; */
 }
 .lorton {
   bottom: 20.73%;
   left: 45.4%;
-  /* bottom: 11.3rem;
-  left: 68.1rem; */
 }
 .bethesda {
   top: 39.63%;
   right: 43.66%;
-  /* top: 21.6rem;
-  right: 65.5rem; */
 }
 .glen_burnie {
   top: 19.08%;
   right: 14.66%;
-  /* top: 10.4rem;
-  right: 22rem; */
 }
 .clinton {
   bottom: 31%;
   right: 31.86%;
-  /* bottom: 16.9rem;
-  right: 47.8rem; */
 }
 .silver_spring {
   top: 36.69%;
   right: 39.93%;
-  /* top: 20rem;
-  right: 59.9rem; */
 }
 .clifton {
   bottom: 33.02%;
   left: 34.06%;
-  /* bottom: 18rem;
-  left: 51.1rem; */
 }
 .falls_church {
   bottom: 44.4%;
   right: 49.2%;
-  /* bottom: 24.2rem;
-  right: 73.8rem; */
 }
 
 /* ==============map background name============== */
@@ -418,14 +373,10 @@
 .map_name_1 {
   top: 36.69%;
   left: 26.66%;
-  /* top: 20rem;
-  left: 40rem; */
 }
 .map_name_2 {
   top: 36.69%;
   right: 7.33%;
-  /* top: 20rem;
-  right: 11rem; */
 }
 
 /* =============location name section============= */
@@ -465,8 +416,6 @@
   text-transform: capitalize;
   font-weight: 500;
   letter-spacing: 0.1rem;
-  /* border: 0.2rem solid #fff; */
-  /* box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); */
 }
 
 .location_name_container .location_link.va:is(:link, :visited) {

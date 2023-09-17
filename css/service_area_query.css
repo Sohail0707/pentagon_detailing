@@ -3,3 +3,23 @@
     padding: 12rem 4.8rem;
   }
 }
+
+@media (max-width: 60em) {
+  .service_img_container .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .service_img_container .i::after {
+    display: none;
+  }
+
+  .map_name {
+    display: none;
+  }
+
+  .location_name_container .location_link:is(:link, :visited) {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+  }
+}

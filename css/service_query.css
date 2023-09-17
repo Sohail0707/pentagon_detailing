@@ -56,3 +56,57 @@
     font-weight: 400;
   }
 }
+
+/* width less than 864px */
+@media (max-width: 54em) {
+  .section_service .highlight_txt {
+    font-size: 12.8rem;
+  }
+
+  .service_container__1_2 {
+    max-width: 76.8rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr minmax(33rem, 1fr);
+  }
+
+  .detail_row_category {
+    display: none;
+  }
+
+  .detail_row {
+    height: 8rem;
+  }
+
+  .interior_heading.hidden,
+  .exterior_heading.hidden {
+    display: none;
+  }
+
+  .service_left_container {
+    display: grid;
+    grid-column: 1/1;
+  }
+
+  .full_detail_container {
+    grid-column: 2/2;
+    display: none;
+  }
+
+  .premium_detail_container {
+    grid-column: 2/2;
+    display: none;
+  }
+
+  .signature_detail_container {
+    grid-column: 2/2;
+    display: none;
+  }
+
+  .detail_container.active {
+    display: flex;
+  }
+
+  .select_service_container {
+    display: grid;
+  }
+}

@@ -90,6 +90,7 @@
   }
 }
 
+/* width less than 960px */
 @media (max-width: 60em) {
   /* -----------------FOOTER----------------- */
   .footer_container {

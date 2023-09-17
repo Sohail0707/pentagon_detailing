@@ -11,15 +11,21 @@
   max-width: 150rem;
   margin: 0 auto;
   /* background-color: dodgerblue; */
-  /* padding: 12rem 0; */
 }
 
 .service_container__1_1 {
   width: 100%;
+  position: relative;
+  height: 15rem;
+  /* background-color: crimson; */
 }
 
 .section_service .highlight_txt {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -28,14 +34,78 @@
   letter-spacing: 1.666rem;
   margin: 0 auto;
   text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
-  z-index: 1;
+}
+
+.section_service .section_title {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.168rem;
+  font-weight: 400;
+  color: var(--primary_red);
+  text-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.2);
 }
 
 .service_container__1_2 {
-  padding-top: 10rem;
+  padding-top: 5rem;
   position: relative;
   display: grid;
   grid-template-columns: 42.5rem 1fr 1fr 1fr;
+}
+
+/* EDITING THE FLOATING BUTTON ON THE RIGHT */
+.select_service_container {
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  transform: translate(0, 50%);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  z-index: 5;
+  /* background-color: lightseagreen; */
+  width: max-content;
+  display: none;
+}
+
+.full_btn {
+  grid-row: 1/1;
+}
+.premium_btn {
+  grid-row: 2/2;
+}
+.signature_btn {
+  grid-row: 3/3;
+}
+
+.select_service_container .vertical_text {
+  display: inline-block;
+  writing-mode: vertical-rl; /* Vertical text from right to left */
+  transform: rotate(180deg); /* Rotate text 180 degrees to make it upright */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-align: center; /* Center the vertical text within the button */
+  transform-origin: center center; /* Set the transform origin to the center */
+  width: max-content;
+}
+
+.select_btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+  color: var(--gray_1);
+  background: transparent;
+  padding: 1.2rem;
+  border: none;
+  width: 100%;
+}
+
+.select_btn.active {
+  background: var(--primary_red);
+  color: var(--primary_light);
 }
 
 /* =============SERVICE LEFT CONTAINER============= */
