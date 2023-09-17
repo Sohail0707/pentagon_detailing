@@ -33,6 +33,7 @@
 
   .btn_buy_gift {
     font-size: 1.6rem;
+    padding: 1.6rem;
   }
 
   .timing_container h2 {
@@ -42,5 +43,14 @@
   .gift_card_terms {
     font-size: 1.6rem;
     word-spacing: 0.5rem;
+  }
+
+  .section_gift_certificate .icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .timing_container {
+    gap: 4.8rem;
   }
 }

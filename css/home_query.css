@@ -42,7 +42,7 @@
   }
 
   .section_contact {
-    padding: 12rem 6.4rem;
+    padding: 12rem 4.8rem;
   }
 
   /* ---------------------------------------- */
@@ -85,9 +85,8 @@
   }
 
   .section_hero {
-    width: 76.8rem;
+    max-width: 76.8rem;
     margin: 0 auto;
-    /* background-color: crimson; */
   }
 
   .main_heading {
@@ -98,7 +97,6 @@
   /* -------------ABOUT SECTION------------- */
   .about_container {
     max-width: 76.8rem;
-    /* background-color: goldenrod; */
   }
 
   .section_about .highlight_txt {
@@ -140,7 +138,6 @@
     grid-row: 2/2;
     max-width: 70rem;
     margin: 0 auto;
-    /* background-color: seagreen; */
   }
 
   .about_summery_container {
@@ -169,7 +166,6 @@
   /* ---------------SERVICE SECTION--------------- */
   .service_container {
     max-width: 76.8rem;
-    /* background-color: lightseagreen; */
   }
 
   .section_service .highlight_txt {
@@ -249,7 +245,6 @@
   .gallery_container {
     max-width: 76.8rem;
     height: calc(40rem + 18rem);
-    /* background-color: deepskyblue; */
   }
 
   .section_gallery .highlight_txt {
@@ -284,7 +279,6 @@
 
   /* ------------SECTION TESTIMONIAL------------ */
   .testimonial_container {
-    /* background-color: greenyellow; */
     max-width: 76.8rem;
     padding-top: 10rem;
   }
@@ -319,7 +313,6 @@
     grid-template-rows: auto auto;
     column-gap: 0;
     row-gap: 8rem;
-    /* background-color: tomato; */
   }
 
   .section_contact .highlight_txt {
@@ -339,4 +332,33 @@
     grid-column: 1/1;
     grid-row: 2/2;
   }
+}
+
+/* ===============MAX WIDTH 700PX=============== */
+@media (max-width: 43.75em) {
+  /* setting the general padding left right */
+
+  /* .section_hero {
+    padding: 0 4.8rem;
+  }
+
+  .section_about {
+    padding: 12rem 4.8rem;
+  }
+
+  .section_service {
+    padding: 12rem 4.8rem 8rem;
+  }
+
+  .section_gallery {
+    padding: 10rem 4.8rem 12rem 4.8rem;
+  }
+
+  .section_testimonial {
+    padding: 12rem 4.8rem;
+  }
+
+  .section_contact {
+    padding: 12rem 4.8rem;
+  } */
 }

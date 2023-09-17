@@ -167,3 +167,8 @@
   line-height: 1.2;
   text-align: center;
 }
+
+.section_gift_certificate .icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
