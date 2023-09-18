@@ -119,19 +119,19 @@ header .highlight_txt {
   margin-left: -2rem;
 }
 .customer__1 {
-  background-image: url(../assets/1.jpg);
+  background-image: url(../assets/user_img/1.jpg);
 }
 .customer__2 {
-  background-image: url(../assets/2.jpg);
+  background-image: url(../assets/user_img/2.jpg);
 }
 .customer__3 {
-  background-image: url(../assets/3.jpg);
+  background-image: url(../assets/user_img/3.jpg);
 }
 .customer__4 {
-  background-image: url(../assets/4.jpg);
+  background-image: url(../assets/user_img/4.jpg);
 }
 .customer__5 {
-  background-image: url(../assets/5.jpg);
+  background-image: url(../assets/user_img/5.jpg);
 }
 
 /* customer count text */

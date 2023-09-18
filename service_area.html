@@ -62,10 +62,22 @@
           <div class="service_area_container__1_2">
             <div class="service_img_container">
               <picture class="service_area_map">
+                <source
+                  srcset="assets/tablet/service_map.svg"
+                  media="(max-width: 64em)" />
+                <source
+                  srcset="assets/mobile/service_map.svg"
+                  media="(max-width: 27em)" />
                 <img src="assets/service_map.svg" alt="" />
               </picture>
 
               <picture class="service_area_map_shadow">
+                <source
+                  srcset="assets/tablet/service_map shadow.svg"
+                  media="(max-width: 64em)" />
+                <source
+                  srcset="assets/mobile/service_map shadow.svg"
+                  media="(max-width: 27em)" />
                 <img src="assets/service_map shadow.svg" alt="" />
               </picture>
               <i class="i alexandria" name="map_location"></i>
@@ -205,6 +217,5 @@
     <!----------------- Script section ---------------->
     <script src="scripts/general_script.js" defer></script>
     <script src="scripts/icon_pack.js" async></script>
-    <script src="scripts/service_area.js" defer></script>
   </body>
 </html>
