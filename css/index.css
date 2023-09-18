@@ -831,7 +831,6 @@ header .highlight_txt {
   object-fit: cover;
 }
 
-.gallery_img::after,
 .gallery_img::after {
   content: "";
   width: 100%;
