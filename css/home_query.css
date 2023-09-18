@@ -5,24 +5,19 @@
 }
 
 @media (max-width: 85em) {
-  .header_container {
-    width: calc(100% - 16rem);
-    margin: 0;
+  .hero_container {
+    width: 100%;
   }
 }
 
 @media (max-width: 75em) {
-  .header_container {
-    width: calc(100% - 9.6rem);
-  }
-
   header .highlight_txt {
     font-size: 19.6rem;
   }
   /* setting the general padding left right */
 
   .section_hero {
-    padding: 0 4.8rem;
+    padding: 15rem 4.8rem 8rem;
   }
 
   .section_about {
@@ -84,9 +79,13 @@
     font-size: 14.4rem;
   }
 
-  .section_hero {
+  .hero_container {
+    width: auto;
     max-width: 76.8rem;
-    margin: 0 auto;
+  }
+
+  .hero_img {
+    margin: 4.8rem auto 0;
   }
 
   .main_heading {
@@ -334,29 +333,22 @@
   }
 }
 
-/* ===============MAX WIDTH 700PX=============== */
+/* ===============MAX WIDTH 600PX=============== */
 @media (max-width: 37.5em) {
-  .header_container {
-    width: 100%;
-  }
-
-  header .highlight_txt {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, calc(100% + 9rem));
-  }
-  /* --------------HERO SECTION-------------- */
-  .header_container {
-    padding: 15rem 0;
-  }
-
   header .highlight_txt {
     font-size: 9.6rem;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 2rem));
+  }
+  /* --------------HERO SECTION-------------- */
+  .section_hero {
+    gap: 4.8rem;
   }
 
   .section_hero .main_heading {
-    font-size: 6.4rem;
+    font-size: 8rem;
     letter-spacing: 0.32rem;
+    margin: 0 auto;
   }
 
   .section_hero .i {
@@ -434,7 +426,7 @@
 @media (max-width: 32em) {
   /* ---------------GENERAL PADDING--------------- */
   .section_hero {
-    padding: 0 2.4rem;
+    padding: 15rem 2.4rem 8rem;
   }
   .section_about {
     padding: 8rem 2.4rem 10rem;
@@ -450,10 +442,6 @@
 
   .contact_heading {
     font-size: 4.8rem;
-  }
-
-  .customer_count_container {
-    left: 4rem;
   }
 }
 
