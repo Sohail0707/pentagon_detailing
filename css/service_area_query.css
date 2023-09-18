@@ -23,3 +23,27 @@
     padding: 1.2rem;
   }
 }
+
+/* max width 600px */
+@media (max-width: 37.5rem) {
+  .section_service_area .highlight_txt {
+    font-size: 9.6rem;
+  }
+  .section_service_area .section_title {
+    top: -4rem;
+  }
+
+  .service_area_container__1_2 {
+    padding-top: 10rem;
+    gap: 8rem;
+  }
+
+  .location_name_container_heading {
+    font-size: 4.8rem;
+    letter-spacing: 0.24rem;
+  }
+
+  .service_img_container i {
+    display: none;
+  }
+}

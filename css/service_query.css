@@ -110,3 +110,47 @@
     display: grid;
   }
 }
+
+@media (max-width: 37.5em) {
+  .section_service .highlight_txt {
+    font-size: 9.6rem;
+  }
+
+  .section_service .section_title {
+    top: 5rem;
+  }
+
+  .service_container__1_2 {
+    grid-template-columns: 1fr;
+    max-width: 50rem;
+  }
+
+  .detail_row {
+    height: 16rem;
+  }
+
+  .detail_row_category {
+    display: flex;
+  }
+
+  .interior_heading.hidden,
+  .exterior_heading.hidden {
+    display: flex;
+  }
+
+  .service_left_container {
+    display: none;
+  }
+
+  .full_detail_container {
+    grid-column: 1/1;
+  }
+
+  .premium_detail_container {
+    grid-column: 1/1;
+  }
+
+  .signature_detail_container {
+    grid-column: 1/1;
+  }
+}

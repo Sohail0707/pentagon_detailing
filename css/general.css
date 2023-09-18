@@ -145,7 +145,8 @@ i[name="close"] {
 }
 
 .current_site.nav_link:is(:link, :visited) {
-  color: blue !important;
+  color: var(--primary_red) !important;
+  font-weight: 600;
 }
 
 .logo {

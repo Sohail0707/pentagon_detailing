@@ -302,6 +302,7 @@ header .highlight_txt {
 .about_shape_1 {
   position: relative;
   width: 100%;
+  height: max-content;
   fill: var(--lite_blue);
   opacity: 0.45;
 }
@@ -311,12 +312,14 @@ header .highlight_txt {
   left: 0;
   top: 3.6rem;
   width: 100%;
+  height: max-content;
   filter: drop-shadow(0.7rem 0 2rem rgba(0, 0, 0, 0.25));
   transform: rotate(185deg);
 }
 
 .about_shape_3 {
   width: 100%;
+  height: max-content;
   position: absolute;
   left: 0;
   top: 3.6rem;
@@ -779,6 +782,7 @@ header .highlight_txt {
   top: -3rem;
   left: 50%;
   transform: translateX(-50%);
+  width: max-content;
   text-transform: uppercase;
   font-size: 2.4rem;
   letter-spacing: 0.168rem;

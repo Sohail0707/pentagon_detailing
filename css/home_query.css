@@ -335,30 +335,124 @@
 }
 
 /* ===============MAX WIDTH 700PX=============== */
-@media (max-width: 43.75em) {
-  /* setting the general padding left right */
-
-  /* .section_hero {
-    padding: 0 4.8rem;
+@media (max-width: 37.5em) {
+  .header_container {
+    width: 100%;
   }
 
+  header .highlight_txt {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(100% + 9rem));
+  }
+  /* --------------HERO SECTION-------------- */
+  .header_container {
+    padding: 15rem 0;
+  }
+
+  header .highlight_txt {
+    font-size: 9.6rem;
+  }
+
+  .section_hero .main_heading {
+    font-size: 6.4rem;
+    letter-spacing: 0.32rem;
+  }
+
+  .section_hero .i {
+    margin: 2.4rem auto 0;
+  }
+
+  .customer_count {
+    font-size: 1.6rem;
+  }
+
+  .customer_count_container .red_line {
+    width: 3.2rem;
+  }
+
+  /* ---------------ABOUT SECTION--------------- */
   .section_about {
-    padding: 12rem 4.8rem;
+    padding: 10rem 4.5rem;
   }
 
+  /* --------------SERVICE SECTION-------------- */
   .section_service {
-    padding: 12rem 4.8rem 8rem;
+    display: none;
+  }
+
+  /* --------------GALLERY SECTION-------------- */
+  .section_gallery {
+    padding: 10rem 4.8rem;
+  }
+
+  .section_gallery .highlight_txt {
+    font-size: 9.6rem;
+  }
+
+  .section_gallery .section_title {
+    top: -5rem;
+  }
+
+  .gallery_img {
+    height: 66.66vw;
+    width: 100%;
+  }
+
+  .btn_gallery {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.5rem);
+  }
+
+  /* -------------SECTION TESTIMONIAL------------- */
+  .section_testimonial {
+    padding: 10rem 0;
+  }
+  .section_testimonial .highlight_txt {
+    font-size: 9.6rem;
+  }
+
+  .testimonial_container {
+    padding-top: 8rem;
+  }
+
+  .testimonial_container .section_title {
+    top: -5rem;
+  }
+
+  /* ---------------SECTION CONTACT--------------- */
+  .section_contact .highlight_txt {
+    font-size: 9.6rem;
+  }
+
+  .section_contact .section_title {
+    top: -5rem;
+  }
+}
+
+/* max width 500px */
+@media (max-width: 32em) {
+  /* ---------------GENERAL PADDING--------------- */
+  .section_hero {
+    padding: 0 2.4rem;
+  }
+  .section_about {
+    padding: 8rem 2.4rem 10rem;
   }
 
   .section_gallery {
-    padding: 10rem 4.8rem 12rem 4.8rem;
-  }
-
-  .section_testimonial {
-    padding: 12rem 4.8rem;
+    padding: 10rem 2.4rem;
   }
 
   .section_contact {
-    padding: 12rem 4.8rem;
-  } */
+    padding: 10rem 2.4rem;
+  }
+
+  .contact_heading {
+    font-size: 4.8rem;
+  }
+
+  .customer_count_container {
+    left: 4rem;
+  }
 }
