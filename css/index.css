@@ -3,19 +3,9 @@
 /* //////////////////////////////////////////// */
 header {
   background: var(--primary_light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
   overflow: hidden;
-  /* height: 100vh; */
-}
-
-.header_container {
-  position: relative;
-  width: 150rem;
-  margin: 0 auto;
-  padding: 20rem 0 15rem 0;
+  /* background-color: darkseagreen; */
 }
 
 /* Header background shapes and texts */
@@ -24,7 +14,7 @@ header .highlight_txt {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(calc(-50% + 1rem), -75%);
+  transform: translate(-50%, -75%);
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -62,18 +52,23 @@ header .highlight_txt {
 }
 
 /* -------------- Section Hero -------------- */
+
 .section_hero {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 2rem;
-
-  height: 100%;
-  padding: 0 8rem;
-
+  gap: 8rem;
+  padding: 15rem 8rem 8rem;
   z-index: 2;
+  /* background-color: goldenrod; */
+}
+
+.hero_container {
+  position: relative;
+  width: 150rem;
+  margin: 0 auto;
+  /* background-color: blue; */
 }
 
 .main_heading {
@@ -82,13 +77,17 @@ header .highlight_txt {
   font-size: 12.8rem;
   font-weight: 500;
   letter-spacing: 1.024rem;
-  width: 83rem;
   text-align: center;
   line-height: 0.9;
+  display: block;
+  margin: 6.4rem auto 0;
+  max-width: 83rem;
   color: var(--primary_dark);
 }
 
 .hero_img {
+  display: block;
+  margin: 6.4rem auto 0;
   max-width: 99rem;
   height: auto;
 }
@@ -101,8 +100,7 @@ header .highlight_txt {
 
 /* User count container */
 .customer_count_container {
-  position: absolute;
-  bottom: 6.4rem;
+  position: relative;
   left: 2rem;
   display: flex;
   align-items: center;
