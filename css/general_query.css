@@ -134,22 +134,8 @@
     column-gap: 0;
   }
 
-  .footer_logo {
-    display: inline-block;
-    margin: 0 auto;
-  }
-
-  .footer_nav_section,
-  .footer_contact_section,
-  .footer_social_section,
-  .footer_contact_container {
-    align-items: center;
-  }
-
-  .footer_nav_list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .footer_contact_link {
+    font-size: 1.6rem;
   }
 }
 
@@ -163,11 +149,6 @@
   .main_nav .nav_link:is(:link, :visited) {
     font-size: 2.4rem;
   }
-
-  /* .nav_list,
-  .nav_home_container {
-    align-items: center;
-  } */
 
   .footer {
     padding: 8rem 2.4rem;
@@ -200,7 +181,8 @@
     font-size: 43.75%;
   }
 
-  .footer_contact_link {
-    font-size: 1.6rem;
+  .highlight_txt {
+    font-size: 8rem !important;
+    opacity: 0.5 !important;
   }
 }

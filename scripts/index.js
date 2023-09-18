@@ -17,7 +17,11 @@ const testimonialContainer__1 = document.querySelector(
 const testimonialContainer__2 = document.querySelector(
   ".testimonial_container___2"
 );
+const testimonialIndContainer = document.querySelector(
+  ".testimonial_indicator_con"
+);
 const review_box = testimonialContainer__2.querySelectorAll(".review_box");
+let testimonial_indicators;
 
 // -------------------------------------------------------
 
@@ -34,6 +38,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   gallery_indicator_con.innerHTML = result;
   gallery_indicators = document.querySelectorAll(".gallery_indicator");
+});
+
+// Navigation dots inside the testimonial section
+document.addEventListener("DOMContentLoaded", () => {
+  let result = "";
+  for (let i = 0; i < review_box.length; i++) {
+    i == 0
+      ? (result += `<span class="testimonial_indicator active"></span>`)
+      : (result += `<span class="testimonial_indicator"></span>`);
+  }
+  testimonialIndContainer.innerHTML = result;
+  testimonial_indicators = document.querySelectorAll(".testimonial_indicator");
 });
 
 // ====================== STYLE END ======================
@@ -116,11 +132,21 @@ testimonialContainer__2.addEventListener("mouseleave", () => {
 setInterval(() => {
   if (directionConstant === 1) {
     scrollReview("left");
+    testimonial_indicators.forEach((el) => {
+      el.classList.contains("active") ? el.classList.remove("active") : "";
+      testimonial_indicators[currentIndex].classList.add("active");
+    });
+
     if (currentIndex === review_box.length - 1) {
       directionConstant = -1;
     }
   } else if (directionConstant === -1) {
     scrollReview("right");
+    testimonial_indicators.forEach((el) => {
+      el.classList.contains("active") ? el.classList.remove("active") : "";
+      testimonial_indicators[currentIndex].classList.add("active");
+    });
+
     if (currentIndex === 0) {
       directionConstant = 1;
     }
