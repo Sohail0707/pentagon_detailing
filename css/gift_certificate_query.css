@@ -57,4 +57,92 @@
 
 /* max width 600px */
 @media (max-width: 37.5em) {
+  .gift_certificate_container_heading {
+    font-size: 4.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .section_gift_certificate .highlight_txt {
+    font-size: 9.6rem;
+  }
+
+  .gift_certificate_container_heading {
+    top: 50%;
+  }
+
+  .gift_certificate_container__1_2 {
+    margin-top: 4.8rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .gift_card_buy_container {
+    margin-top: 8rem;
+  }
+
+  .timing_container {
+    gap: 2.4rem;
+  }
+
+  .timing_container div {
+    gap: 0.8rem;
+  }
+
+  .terms_container {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 32em) {
+  .section_gift_certificate {
+    padding: 10rem 2.4rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .section_gift_certificate .highlight_txt {
+    position: absolute;
+    top: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .gift_certificate_container_heading {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (max-width: 27em) {
+  .section_gift_certificate .highlight_txt {
+    display: none;
+  }
+
+  .gift_card_terms {
+    font-size: 2rem;
+  }
+
+  .timing_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .timing_container div {
+    gap: 1.6rem;
+  }
+
+  .timing_container h2 {
+    font-size: 2.4rem;
+  }
+
+  .btn_buy_gift {
+    font-size: 2.4rem;
+    padding: 1.6rem 2.4rem;
+    width: max-content;
+  }
+
+  .section_gift_certificate .section_title {
+    margin-bottom: 4.8rem;
+  }
 }

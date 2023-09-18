@@ -199,4 +199,8 @@
   html {
     font-size: 43.75%;
   }
+
+  .footer_contact_link {
+    font-size: 1.6rem;
+  }
 }

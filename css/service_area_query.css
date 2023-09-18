@@ -47,3 +47,10 @@
     display: none;
   }
 }
+
+/* MX WIDTH 512PX */
+@media (max-width: 32em) {
+  .section_service_area {
+    padding: 12rem 2.4rem 8rem;
+  }
+}

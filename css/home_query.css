@@ -486,3 +486,9 @@
     word-spacing: 0.1rem;
   }
 }
+
+@media (max-width: 25em) {
+  .scroll_btn {
+    padding: 1.2rem 0.8rem;
+  }
+}
