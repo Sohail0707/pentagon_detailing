@@ -23,18 +23,18 @@
   }
 }
 
-@media (max-width: 75em) {
+@media (max-width: 81.25em) {
   .main_nav {
     padding: 2.4rem 4.8rem;
     justify-content: flex-start;
   }
 
   .logo {
-    margin-left: 4.8rem;
+    margin-left: auto;
   }
 
   .btn_set_appointment {
-    margin-left: auto;
+    margin-left: 4.8rem;
   }
 
   /* =================mobile navigation================= */
@@ -150,28 +150,21 @@
     font-size: 2.4rem;
   }
 
-  .footer {
-    padding: 8rem 2.4rem;
-  }
-}
-
-/* max width 464px */
-@media (max-width: 29em) {
   .btn_set_appointment {
-    padding: 1.6rem;
     font-size: 2rem;
   }
 
   .nav_list .btn_set_appointment {
     display: inline-block;
+    margin-left: 0;
   }
 
-  .nav_list + .btn_set_appointment {
+  .mobile_nav_btn + .btn_set_appointment {
     display: none;
   }
 
-  .logo {
-    margin-left: auto;
+  .footer {
+    padding: 8rem 2.4rem;
   }
 }
 
