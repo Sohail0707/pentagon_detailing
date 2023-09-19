@@ -1282,6 +1282,13 @@ header .highlight_txt {
   transform: translateY(0);
 }
 
+.contact_form input:not(:placeholder-shown) + label,
+.contact_form textarea:not(:placeholder-shown) + label {
+  top: -3.5rem;
+  left: 0;
+  transform: translateY(0);
+}
+
 /* editing submit button */
 #contact_submit_btn {
   cursor: pointer;

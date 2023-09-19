@@ -486,4 +486,28 @@
   .scroll_btn {
     padding: 1.2rem 0.8rem;
   }
+
+  .section_gallery .section_title {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .gallery_container {
+    height: calc(40rem + 8rem);
+  }
+
+  .section_testimonial .section_title {
+    position: relative;
+    transform: none;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .testimonial_container {
+    padding-top: 0;
+  }
 }

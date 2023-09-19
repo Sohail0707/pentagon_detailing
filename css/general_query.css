@@ -182,7 +182,6 @@
   }
 
   .highlight_txt {
-    font-size: 8rem !important;
-    opacity: 0.5 !important;
+    display: none !important;
   }
 }
