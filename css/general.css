@@ -150,19 +150,22 @@ i[name="close"] {
 }
 
 .logo:is(:link, :visited) {
+  grid-area: logo;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 5rem;
+  width: 18rem;
+  margin-bottom: auto;
+  margin-top: -2rem;
   z-index: 1;
-  /* background-color: lawngreen; */
+  /* background-color: aqua; */
 }
 
 .logo:is(:link, :visited) img {
   display: inline-block;
-  height: max-content;
-  height: 100%;
+  width: 100%;
+  height: min-content;
 }
 
 .nav_home_container {
@@ -233,13 +236,17 @@ i[name="close"] {
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 5rem;
+  width: 18rem;
+  margin-bottom: auto;
+  margin-top: -1rem;
   z-index: 1;
+  /* background-color: aqua; */
 }
 
 .footer_logo:is(:link, :visited) img {
   display: inline-block;
-  height: 100%;
+  width: 100%;
+  height: min-content;
 }
 
 .footer_nav_section {
