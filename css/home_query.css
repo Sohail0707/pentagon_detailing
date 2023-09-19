@@ -450,6 +450,14 @@
   .contact_heading {
     font-size: 4.8rem;
   }
+
+  .background_highlight {
+    backdrop-filter: none;
+  }
+
+  .gallery_img::after {
+    display: none;
+  }
 }
 
 /* max width 464px */
