@@ -5,6 +5,7 @@
     <meta http-equiv="Permissions-Policy" content="browsing-topics=(none)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pentagon detailing</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/general_query.css" />
@@ -15,47 +16,7 @@
     <span class="scroll_btn" onclick="scrollToTop()"><h3>go up</h3></span>
     <main>
       <header>
-        <nav class="main_nav" id="main_nav">
-          <!-- mobile navigation -->
-          <div class="mobile_nav_btn">
-            <i class="i" name="menu"></i>
-            <i class="i" name="close"></i>
-          </div>
-          <!-- ----------------- -->
-
-          <a href="set_appointment.html" class="btn_set_appointment"
-            >set appointment</a
-          >
-
-          <ul class="nav_list">
-            <li class="nav_home_container">
-              <a href="/" class="nav_link">home</a>
-
-              <a href="/?id=gallery" class="nav_link">gallery</a>
-              <a href="/?id=testimonial" class="nav_link">testimonials</a>
-              <a href="/?id=contact" class="nav_link">contact</a>
-            </li>
-
-            <li><a href="service.html" class="nav_link">services</a></li>
-            <li>
-              <a href="service_area.html" class="nav_link">service area</a>
-            </li>
-            <li>
-              <a href="gift_certificate.html" class="nav_link"
-                >gift certificates</a
-              >
-            </li>
-            <li>
-              <a href="set_appointment.html" class="btn_set_appointment"
-                >set appointment</a
-              >
-            </li>
-          </ul>
-
-          <a href="#" class="logo">
-            <img src="./assets/logo_dark.png" alt="PENTAGON LOGO" />
-          </a>
-        </nav>
+        <?php include "templates/navigation.php"; ?>
 
         <!---------------- Section Hero ---------------->
         <section class="section_hero">
@@ -444,71 +405,7 @@
           <span class="shape_10"></span>
         </div>
       </section>
-
-      <footer class="footer">
-        <div class="footer_container">
-          <a href="#" class="footer_logo">
-            <img src="./assets/logo_light.png" alt="PENTAGON LOGO" />
-          </a>
-
-          <section class="footer_nav_section">
-            <h2 class="footer_section_heading">links</h2>
-            <nav class="footer_nav">
-              <ul class="footer_nav_list">
-                <li><a href="/" class="nav_link">home</a></li>
-                <li><a href="service.html" class="nav_link">services</a></li>
-                <li>
-                  <a href="service_area.html" class="nav_link">service area</a>
-                </li>
-                <li>
-                  <a href="gift_certificate.html" class="nav_link"
-                    >gift certificates</a
-                  >
-                </li>
-                <li>
-                  <a href="/?id=gallery" class="nav_link">gallery</a>
-                </li>
-                <li>
-                  <a href="/?id=testimonial" class="nav_link">testimonials</a>
-                </li>
-                <li>
-                  <a href="/?id=contact" class="nav_link">contact</a>
-                </li>
-              </ul>
-            </nav>
-          </section>
-
-          <section class="footer_contact_section">
-            <h2 class="footer_section_heading">contact</h2>
-            <div class="footer_contact_container">
-              <div class="footer_location_box">
-                <i name="location" class="i"></i>
-                <a href="" class="footer_contact_link"
-                  >14010 Mathews Dr. Woodbridge, VA 22191</a
-                >
-              </div>
-              <div class="footer_phone_box">
-                <i name="phone" class="i"></i>
-                <a href="" class="footer_contact_link">240 - 297 - 4046</a>
-              </div>
-            </div>
-          </section>
-
-          <section class="footer_social_section">
-            <h2 class="footer_section_heading">follow us</h2>
-            <div class="footer_social_container">
-              <i name="facebook" class="i"></i>
-              <i name="instagram" class="i"></i>
-              <i name="twitter" class="i"></i>
-              <i name="pinterest" class="i"></i>
-            </div>
-          </section>
-
-          <h3 class="copyright">
-            Copyright © 2023, Pentagon Detailing All Rights Reserved
-          </h3>
-        </div>
-      </footer>
+      <?php include "templates/footer.php"; ?>
     </main>
 
     <!----------------- Script section ---------------->
