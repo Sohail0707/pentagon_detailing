@@ -1333,6 +1333,7 @@ header .highlight_txt {
 .contact_map {
   width: 100%;
   position: absolute;
+  z-index: 3;
 }
 
 .contact_map img {
@@ -1344,6 +1345,7 @@ header .highlight_txt {
 .contact_map_shadow {
   width: 100%;
   position: absolute;
+  z-index: 1;
 }
 
 .contact_map_shadow img {
