@@ -9,12 +9,12 @@
       <nav class="footer_nav">
         <ul class="footer_nav_list">
           <li><a href="/" class="nav_link">home</a></li>
-          <li><a href="service.html" class="nav_link">services</a></li>
+          <li><a href="service.php" class="nav_link">services</a></li>
           <li>
-            <a href="service_area.html" class="nav_link">service area</a>
+            <a href="service_area.php" class="nav_link">service area</a>
           </li>
           <li>
-            <a href="gift_certificate.html" class="nav_link"
+            <a href="gift_certificate.php" class="nav_link"
               >gift certificates</a
             >
           </li>
