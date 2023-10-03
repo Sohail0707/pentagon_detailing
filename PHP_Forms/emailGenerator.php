@@ -13,7 +13,7 @@ function generateEmailHTML($name, $email, $message) {
             </style>
         </head>
         <body>
-            <h2>New Message from Your Contact Form</h2>
+            <h2>New Message from {$name}</h2>
             <p><strong>Name:</strong> {$name}</p>
             <p><strong>Email:</strong> {$email}</p>
             <p><strong>Message:</strong><br/> {$message}</p>

@@ -1,4 +1,5 @@
 // scripts/contact_form.js
+console.log("script loaded");
 
 $(document).ready(function () {
   $("#contact_form").submit(function (event) {

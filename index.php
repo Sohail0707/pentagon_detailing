@@ -6,12 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pentagon detailing</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <style>
+      .loading_back {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: rgba(225, 230, 235, 0.70);
+        backdrop-filter: blur(1rem);
+        z-index: 100;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading_ellipse {
+        animation: spin 1.5s linear infinite;
+      }
+    </style>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/general_query.css" />
     <link rel="stylesheet" href="css/home_query.css" />
   </head>
   <body>
+    <!-- loading animation -->
+    <div class="loading_back">
+      <img src="loading_ellipse.svg" alt="Loading..." class="loading_ellipse">
+    </div>
+    <!-- ----------------- -->
     <!-- scroll to top -->
     <span class="scroll_btn" onclick="scrollToTop()"><h3>go up</h3></span>
     <main>
