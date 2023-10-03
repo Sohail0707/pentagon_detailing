@@ -337,7 +337,7 @@
         <div class="contact_container">
           <div class="contact_form_container">
             <h2 class="contact_heading">send us a message</h2>
-            <form action="" class="contact_form">
+            <form action="PHP_Forms/formHandler.php" class="contact_form" id="contact_form" method="POST" >
               <div class="input_container">
                 <input
                   type="text"
@@ -437,5 +437,7 @@
     <!----------------- Script section ---------------->
     <script src="scripts/general_script.js" defer></script>
     <script src="scripts/index.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/contact_form.js"></script>
   </body>
 </html>
