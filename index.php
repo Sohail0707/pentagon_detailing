@@ -16,8 +16,8 @@
         display: none;
         align-items: center;
         justify-content: center;
-        background: rgba(225, 230, 235, 0.70);
-        backdrop-filter: blur(1rem);
+        background: rgba(220, 220, 220, 0.60);
+        backdrop-filter: blur(0.8rem);
         z-index: 100;
       }
 
@@ -31,7 +31,9 @@
       }
 
       .loading_ellipse {
-        animation: spin 1.5s linear infinite;
+        animation: spin 1s linear infinite;
+        height: 7rem;
+        width: 7rem;
       }
     </style>
     <link rel="stylesheet" href="css/general.css" />
