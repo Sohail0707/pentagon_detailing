@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Configure the email message headers and body
     $swiftMessage = (new Swift_Message('New message from your contact form'))
-        ->setFrom(['noreply@yourdomain.com' => 'PENTAGON DETAILING'])
+        ->setFrom(['noreply@pentagon.com' => 'PENTAGON DETAILING'])
         ->setReplyTo($email, $name)  // Make sure replies go back to the user
         ->setTo(COMPANY_EMAIL)
         ->setBody($emailHTML, 'text/html');  // Set content type to HTML
