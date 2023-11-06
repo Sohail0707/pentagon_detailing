@@ -19,7 +19,7 @@ $(document).ready(function () {
       setTimeout(function () {
         alert(response); // Handle the server response here
         $("#contact_form")[0].reset();
-      }, 30); // 50 milliseconds should be enough, but you can adjust this if needed.
+      }, 30); // 30 milliseconds should be enough, but you can adjust this if needed.
     });
   });
 });
